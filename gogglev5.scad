@@ -2,7 +2,6 @@
 //goggles
 //union(){}
 //intersection(){
-
 //cylinder(height, r1, r2, center=true/false)
 
 
@@ -18,17 +17,31 @@ translate([0,0,0]) rotate([90,90,90]) cylinder(16,28,20);
 }
 }
 //LED holes
-translate([15,12,-12]) rotate([90,90,90]) cylinder(2,2,2,$fn = 12);
-translate([15,12,12]) rotate([90,90,90]) cylinder(2,2,2,$fn = 12);
-translate([15,-12,-12]) rotate([90,90,90]) cylinder(2,2,2,$fn = 12);
-translate([15,-12,12]) rotate([90,90,90]) cylinder(2,2,2,$fn = 12);
+translate([15,12,-12]) rotate([90,90,90]) cylinder(2,3,3,$fn = 12);
+translate([15,-12,12]) rotate([90,90,90]) cylinder(2,3,3,$fn = 12);
+translate([15,12,12]) rotate([90,90,90]) cylinder(2,3,3,$fn = 12);
+translate([15,-12,-12]) rotate([90,90,90]) cylinder(2,3,3,$fn = 12);
+//pin holes
+translate([15,-13,13]) rotate([90,90,90]) cylinder(4,1,1);
+translate([15,-11,11]) rotate([90,90,90]) cylinder(4,1,1);
+
+translate([15,13,13]) rotate([90,90,90]) cylinder(4,1,1);
+translate([15,11,11]) rotate([90,90,90]) cylinder(4,1,1);
+
+translate([15,13,-13]) rotate([90,90,90]) cylinder(4,1,1);
+translate([15,11,-11]) rotate([90,90,90]) cylinder(4,1,1);
+
+translate([15,-13,-13]) rotate([90,90,90]) cylinder(4,1,1);
+translate([15,-11,-11]) rotate([90,90,90]) cylinder(4,1,1);
 //neopixel holes
-translate([15,16,0]) rotate([90,90,90]) cylinder(2,3,3,$fn = 12);
-translate([15,0,16]) rotate([90,90,90]) cylinder(2,3,3,$fn = 12);
-translate([15,-16,0]) rotate([90,90,90]) cylinder(2,3,3,$fn = 12);
-translate([15,0,-16]) rotate([90,90,90]) cylinder(2,3,3,$fn = 12);
+translate([15,15,0]) rotate([90,90,90]) cylinder(2,6,6,$fn = 12);
+translate([15,0,15]) rotate([90,90,90]) cylinder(2,6,6,$fn = 12);
+translate([15,-15,0]) rotate([90,90,90]) cylinder(2,6,6,$fn = 12);
+translate([15,0,-15]) rotate([90,90,90]) cylinder(2,6,6,$fn = 12);
 //camera aperture
 translate([15,0,0]) rotate([90,90,90]) cylinder(4,3,3);
+//lens inset
+translate([15,0,0]) rotate([90,90,90]) cylinder(2,10,10);
 }
 //translate([-16,0,0])
 difference(){
