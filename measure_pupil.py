@@ -6,41 +6,176 @@ import matplotlib.pyplot as plt
 
 img = cv2.imread(str(sys.argv[1]))
 
-res = 100
-
-shp = img.shape
+shp = img[:,:,0].shape
 print(shp)
 
-print(img[0][0][0])
-#print(img[0][0][1])
-#print(img[0][0][2])
+print(img[0][0][0]) #Red
+#print(img[0][0][1]) #Green
+#print(img[0][0][2]) #Blue
+
+#simple contrast enhancement
+#multiplier = 2
+#ones_array = np.ones((shp[0], shp[1]), np.uint8)
+#multiple_array = multiplier*ones_array
+#arrays mist be same type to be multiplied
+#print(img[:,:,0].dtype)
+#print(multiple_array.dtype)
+#imgt = cv2.multiply(img[:,:,0], multiple_array)
+
+##contrast enhance first - using histogram normalization
+imgt = cv2.equalizeHist(img[:,:,0])
+plt.imshow(imgt, 'gray')
+plt.show()
 
 
-##contract enhance first
+##noise reduction
+##normalised block
+#blur = cv2.blur(imgt, (5,5))
+##GaussianBlur
+#gaussian = cv2.GaussianBlur(imgt, (5,5), 0)
+##BilateralBlur
+#bilateral = cv2.bilateralFilter(imgt, 9, 75, 75)
+##median filter
+median = cv2.medianBlur(imgt, 5)
+
 
 ##thresholding??
-ret, imgt = cv2.threshold(img[:,:,0], 100,255 ,cv2.THRESH_BINARY)
-##histogram normalization
-#imgt = cv2.equalizeHist(img[:,:,0])
+threshold = 50
+ret, thresh_img = cv2.threshold(median, threshold,255 ,cv2.THRESH_BINARY)
+
+'''
+for i in range(0,255, 20):
+        print(i)
+        threshold = i
+        ret, thresh_img = cv2.threshold(median, threshold,255 ,cv2.THRESH_BINARY)
+        plt.imshow(thresh_img, 'gray')
+        plt.show()
+'''
+
+#NOTICE THAT PUPIL IS ALWAYS RIGHT Centre OF IMAGE
+'''
+o_img = thresh_img
+#draw line across image centre
+cv2.line(o_img, (0, 0), (shp[1], shp[0]), (100,100,100), 3) #image, centre x/y, radius, color,  
+cv2.line(o_img, (0, shp[0]), (shp[1], 0), (100,110,100), 3) #image, centre x/y, radius, color,  
+
+plt.imshow(o_img, 'gray')
+plt.show()
+'''
+
+####Create a whitemask for the left side of the image
+mask_array = np.zeros((shp[0], shp[1]), np.uint8)
+mask_array[:, shp[1]/2:] +=255
+plt.imshow(mask_array, 'gray')
+plt.show()
+
+masked_img = cv2.multiply(thresh_img, mask_array)
+masked_img[:, :shp[1]/2] +=255
+plt.imshow(masked_img)
+plt.show()
+
+##now simply calculate pixel area of non-white pixels
+#faster opencv version
+#(images, channels, mask, histSize (i.e. bin count), ranges
+hist = cv2.calcHist([masked_img], [0], None, [256], [0,256])
+#plt.plot(hist)
+#plt.show()
+##nb mask allows calculation using only part of image
+'''
+masked_img2 = cv2.bitwise_and(thresh_img, thresh_img, mask=mask_array)
+masked_hist = cv2.calcHist([masked_img2], [0], None, [256], [0,256])
+plt.plot(masked_hist)
+
+#numpy method
+#hist, bins = np.histogram(masked_img, 256, [0,256])
+#plt.hist(masked_img.ravel(), 256, [0,256])
+plt.show()
+
+plt.imshow(masked_img2)
+plt.show()
+'''
+#print(hist)
+no_of_black_pixels = hist[0]
+print('Number of Black pixels: '+str(no_of_black_pixels))
+print('Number of White pixels: '+str(hist[-1]))
 
 
+#trying to position and measurem pupil
+res = 10
 
-print(range(0, shp[1],res))
+#print(range(0, shp[1],res))
 #print number of black pixels for each row of pixels
 #across
 ac = []
 for i in range(0, shp[1], res):
-	s = sum(img[:,i,0])
+	s = sum(masked_img[:,i])
 	ac.append(s)
 	#print(str(i)+": "+str(s))
-
-
 #down
 dw = []
 for i in range(0, shp[0], res):
-	s = sum(img[i,:,0])
+	s = sum(masked_img[i,:])
         dw.append(s)
         #print(str(i)+": "+str(s))
+
+plt.plot(range(len(ac)), ac, 'k-')
+plt.plot(range(len(dw)), dw, 'r-')
+plt.show()
+
+#attemp to draw a circle around pupil
+#calculate radius from number of black pixels
+rd = np.sqrt(no_of_black_pixels/np.pi)
+#drawcentre
+cv2.circle(masked_img, (ac.index(min(ac))*res, dw.index(min(dw))*res), rd, (100,100,100), 3) #image, centre x/y, radius, color, ?? 
+#this could be improved by fitting for the minima rather than just selecting the minima
+
+plt.imshow(masked_img, 'gray')
+plt.show()
+
+
+'''
+##dilation and erosion??
+#taken from: http://stackoverflow.com/questions/19363293/whats-the-fastest-way-to-increase-color-image-contrast-with-opencv-in-python-c
+# Image data
+image = cv2.imread('imgur.png',0) # load as 1-channel 8bit grayscale
+cv2.imshow('image',image)
+maxIntensity = 255.0 # depends on dtype of image data
+x = arange(maxIntensity) 
+
+# Parameters for manipulating image data
+phi = 1
+theta = 1
+
+# Increase intensity such that
+# dark pixels become much brighter, 
+# bright pixels become slightly bright
+newImage0 = (maxIntensity/phi)*(image/(maxIntensity/theta))**0.5
+newImage0 = array(newImage0,dtype=uint8)
+
+cv2.imshow('newImage0',newImage0)
+cv2.imwrite('newImage0.jpg',newImage0)
+
+y = (maxIntensity/phi)*(x/(maxIntensity/theta))**0.5
+
+# Decrease intensity such that
+# dark pixels become much darker, 
+# bright pixels become slightly dark 
+newImage1 = (maxIntensity/phi)*(image/(maxIntensity/theta))**2
+newImage1 = array(newImage1,dtype=uint8)
+
+cv2.imshow('newImage1',newImage1)
+
+z = (maxIntensity/phi)*(x/(maxIntensity/theta))**2
+
+# Plot the figures
+figure()
+plot(x,y,'r-') # Increased brightness
+plot(x,x,'k:') # Original image
+plot(x,z, 'b-') # Decreased brightness
+#axis('off')
+axis('tight')
+show()
+'''
 
 
 #drawcentre
@@ -53,13 +188,13 @@ cv2.waitKey(0)
 
 cv2.destroyAllWindows()
 
-plt.imshow(imgt, 'gray')
+#plt.imshow(imgt, 'gray')
 #plt.imshow(img[:,:,0])
 #plt.plot([j*res for j in range(len(ac))], ac, 'ko-')
 
-plt.xlim(0,2500)
-plt.ylim(0,2000)
+#plt.xlim(0,2500)
+#plt.ylim(0,2000)
 #plt.ylabel('Whiteness across image')
-plt.show()
+#plt.show()
 
 #cv2.imwrite('out.png', r)

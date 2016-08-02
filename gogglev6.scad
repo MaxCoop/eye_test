@@ -25,7 +25,7 @@ seating_depth = 5;
 lens_radius = 13;
 
 //led size
-led_radius = 3;
+led_radius = 4;
 led_inset = 3;
 pin_width = 1;
 
@@ -42,12 +42,12 @@ cube_size = 27;
 mount_height = 10;
 mount_wall_thickness = 1;
 
-//LED diffuser
-diffuser_height = 15;
-diffuser_radius = 12;
+//LED diffuser - removed - doesn't work
+//diffuser_height = 15;
+//diffuser_radius = 12;
 
-upper_diameter = 0.13*(diffuser_height+tip_thickness+1)+tip_radius-1;
-lower_diameter = 0.13*diffuser_height+tip_radius-1;
+//upper_diameter = 0.13*(diffuser_height+tip_thickness+1)+tip_radius-1;
+//lower_diameter = 0.13*diffuser_height+tip_radius-1;
 
 difference(){
 union(){ //adds pegs for rpi camera mount
@@ -102,6 +102,7 @@ translate([-cut_cylinder_radius,cut_offset,-cut_cylinder_radius]) rotate([0,0,90
 translate([tip_length+mount_height-tip_thickness/2+1,-2,2]) rotate([90,45,90]) cube(size = [cube_size, cube_size+1, mount_height], center = true);
 
 //LED diffuser
+/*
 difference(){
 translate([tip_length-diffuser_height,tip_radius-wall_thickness,0]) rotate([90,90,90]) cylinder(tip_thickness,diffuser_radius,diffuser_radius);
 //subtraction ring
@@ -110,6 +111,7 @@ translate([tip_length-diffuser_height-1,0,0]) rotate([90,90,90]) cylinder(tip_th
 translate([tip_length-diffuser_height-1,0,0]) rotate([90,90,90]) cylinder(tip_thickness+2,upper_diameter,lower_diameter);
 }
 }
+*/
 
 }//closes goggle mount union
 
