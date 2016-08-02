@@ -27,6 +27,12 @@ imgt = cv2.equalizeHist(img[:,:,0])
 plt.imshow(imgt, 'gray')
 plt.show()
 
+#from http://docs.opencv.org/3.1.0/d5/daf/tutorial_py_histogram_equalization.html#gsc.tab=0
+#adaptive histogram normalised
+# create a CLAHE object (Arguments are optional).
+clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8,8))
+cl1 = clahe.apply(img)
+
 
 ##noise reduction
 ##normalised block
@@ -39,9 +45,24 @@ plt.show()
 median = cv2.medianBlur(imgt, 5)
 
 
+##dilation and erosion
+kernel = np.ones((11,11),np.uint8) 
+
+dilated = cv2.dilate(im, kernel)
+eroded = cv2.erode(img,kernel,iterations = 1)
+
+
 ##thresholding??
 threshold = 50
 ret, thresh_img = cv2.threshold(median, threshold,255 ,cv2.THRESH_BINARY)
+
+##note that adaptive thresholding will likely give better results
+#http://docs.opencv.org/3.1.0/d5/daf/tutorial_py_histogram_equalization.html#gsc.tab=0
+#AND
+#http://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_thresholding/py_thresholding.html
+
+th2 = cv2.adaptiveThreshold(median,255,cv2.ADAPTIVE_THRESH_MEAN_C,cv2.THRESH_BINARY,11,2)
+th3 = cv2.adaptiveThreshold(median,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,11,2)
 
 '''
 for i in range(0,255, 20):
@@ -118,13 +139,29 @@ for i in range(0, shp[0], res):
         dw.append(s)
         #print(str(i)+": "+str(s))
 
-plt.plot(range(len(ac)), ac, 'k-')
-plt.plot(range(len(dw)), dw, 'r-')
+plt.plot(range(len(ac)), ac, 'k.')
+plt.plot(range(len(dw)), dw, 'r.')
+
+plt.plot(ac.index(min(ac)), min(ac), 'ko')
+plt.plot(dw.index(min(dw)), min(dw), 'ro')
+'''
+#centre ac
+acf = np.polyfit(range(len(ac)),ac, 2)
+dwf = np.polyfit(range(len(dw)),dw, 2)
+f1 = np.poly1d(acf)
+f2 = np.poly1d(dwf)
+
+# calculate new x's and y's
+plt.plot(range(len(ac)), f1(range(len(ac))), 'k-')
+plt.plot(range(len(dw)), f2(range(len(dw))), 'r-')
+'''
+
 plt.show()
 
 #attemp to draw a circle around pupil
 #calculate radius from number of black pixels
 rd = np.sqrt(no_of_black_pixels/np.pi)
+
 #drawcentre
 cv2.circle(masked_img, (ac.index(min(ac))*res, dw.index(min(dw))*res), rd, (100,100,100), 3) #image, centre x/y, radius, color, ?? 
 #this could be improved by fitting for the minima rather than just selecting the minima
@@ -132,59 +169,8 @@ cv2.circle(masked_img, (ac.index(min(ac))*res, dw.index(min(dw))*res), rd, (100,
 plt.imshow(masked_img, 'gray')
 plt.show()
 
-
-'''
-##dilation and erosion??
-#taken from: http://stackoverflow.com/questions/19363293/whats-the-fastest-way-to-increase-color-image-contrast-with-opencv-in-python-c
-# Image data
-image = cv2.imread('imgur.png',0) # load as 1-channel 8bit grayscale
-cv2.imshow('image',image)
-maxIntensity = 255.0 # depends on dtype of image data
-x = arange(maxIntensity) 
-
-# Parameters for manipulating image data
-phi = 1
-theta = 1
-
-# Increase intensity such that
-# dark pixels become much brighter, 
-# bright pixels become slightly bright
-newImage0 = (maxIntensity/phi)*(image/(maxIntensity/theta))**0.5
-newImage0 = array(newImage0,dtype=uint8)
-
-cv2.imshow('newImage0',newImage0)
-cv2.imwrite('newImage0.jpg',newImage0)
-
-y = (maxIntensity/phi)*(x/(maxIntensity/theta))**0.5
-
-# Decrease intensity such that
-# dark pixels become much darker, 
-# bright pixels become slightly dark 
-newImage1 = (maxIntensity/phi)*(image/(maxIntensity/theta))**2
-newImage1 = array(newImage1,dtype=uint8)
-
-cv2.imshow('newImage1',newImage1)
-
-z = (maxIntensity/phi)*(x/(maxIntensity/theta))**2
-
-# Plot the figures
-figure()
-plot(x,y,'r-') # Increased brightness
-plot(x,x,'k:') # Original image
-plot(x,z, 'b-') # Decreased brightness
-#axis('off')
-axis('tight')
-show()
-'''
-
-
 #drawcentre
 #cv2.circle(gimg, (i, i), 2, (0,0,255), 3) #image, centre x/y, radius, color, ?? 
-
-'''
-cv2.imshow('Stuff', r)
-cv2.waitKey(0)
-'''
 
 cv2.destroyAllWindows()
 
