@@ -4,8 +4,11 @@ import numpy as np
 import sys
 import matplotlib.pyplot as plt
 
+ignore = 0.1 #in seconds
 cap = cv2.VideoCapture(str(sys.argv[1]))
 threshold = int(sys.argv[2])
+
+##can we write a function to better guess the threshold value
 
 num_frames = int(cap.get(cv.CV_CAP_PROP_FRAME_COUNT))
 width = int(cap.get(cv.CV_CAP_PROP_FRAME_WIDTH))
@@ -63,12 +66,10 @@ while(cap.isOpened()):
     data.append(hist[0])
     #print(len(data))
     
-
 cap.release()
-#out.release()
 vout.release()
 cv2.destroyAllWindows()
 
-plt.plot(range(len(data)), data, 'ko-')
+plt.plot(range(len(data))[int(ignore*fps):], data[int(ignore*fps):], 'ko-')
 plt.show()
 
