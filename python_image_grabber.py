@@ -3,15 +3,15 @@ import picamera
 import picamera.array
 import numpy as np
 import RPi.GPIO as GPIO
-import cv2, cv
+import cv2
 
 height = 1080
 width = 1920
 
 #we want to convert output to video
-fourcc = cv2.cv.CV_FOURCC('m', 'p','4','v')
+fourcc = cv2.cv.CV_FOURCC('m','j','p','g')
 vout = cv2.VideoWriter()
-success = vout.open('captured_video.m4v', fourcc, fps, (width, height), True)
+success = vout.open('captured_video.avi', fourcc, fps, (width, height), True)
 
 class AnalysisClass(picamera.array.PiYUVAnalysis):
    def analyse(self,array):
