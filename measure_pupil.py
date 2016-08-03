@@ -30,8 +30,8 @@ plt.show()
 #from http://docs.opencv.org/3.1.0/d5/daf/tutorial_py_histogram_equalization.html#gsc.tab=0
 #adaptive histogram normalised
 # create a CLAHE object (Arguments are optional).
-clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8,8))
-cl1 = clahe.apply(img)
+#clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8,8))
+#cl1 = clahe.apply(img)
 
 
 ##noise reduction
