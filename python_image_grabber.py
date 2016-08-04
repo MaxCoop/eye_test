@@ -7,6 +7,7 @@ import cv2
 
 height = 1080
 width = 1920
+fps = 30
 
 #we want to convert output to video
 fourcc = cv2.cv.CV_FOURCC('m','j','p','g')
@@ -26,7 +27,7 @@ class AnalysisClass(picamera.array.PiYUVAnalysis):
 with picamera.PiCamera() as camera:
   with picamera.array.PiYUVAnalysis(camera) as output:
     camera.resolution = (height,width) 
-    camera.framerate = 30
+    camera.framerate = fps
 
     output = AnalysisClass(camera)
     camera.start_recording(output,format='yuv')

@@ -31,12 +31,44 @@ if __name__ == '__main__':
 	# Intialize the library (must be called once before other functions).
 	strip.begin()
 
-	print ('Press Ctrl-C to quit.')
-	colorWipe(strip, Color(0, 0, 0))
+
 	#colorWipe(strip, Color(255, 0, 0))  # Green wipe
-	colorWipe(strip, Color(0, 0, 255))  # Blue wipe
-	#colorWipe(strip, Color(0, 255, 0))  # Red wipe
-	time.sleep(1)
-	#turn off LED for IR
+        #colorWipe(strip, Color(0, 0, 255))  # Blue wipe
+        #colorWipe(strip, Color(0, 255, 0))  # Red wipe
+
+	print ('Intialising colour.')
 	colorWipe(strip, Color(0, 0, 0))
-	time.sleep(1)
+	time.sleep(0.1)
+
+	print('Testing White levels')
+	#increasing 0.5 s white flashes
+	for i in range(0,255, 20):
+		print(i)
+		colorWipe(strip, Color(i, i, i))
+		time.sleep(0.5)
+		colorWipe(strip, Color(0, 0, 0))
+		time.sleep(0.5)
+
+	print('Control Dark')
+	#5s of dark
+	colorWipe(strip, Color(0, 0, 0))
+        time.sleep(5)
+
+	#0.5s flash of red
+	colorWipe(strip, Color(0, 255, 0))  # Red wipe
+	time.sleep(0.5)
+	
+	print('Red Dark')
+	#5s of dark
+	colorWipe(strip, Color(0, 0, 0))
+        time.sleep(5)
+
+	#0.5s flash of blue
+	colorWipe(strip, Color(0, 0, 255))  # Red wipe
+        time.sleep(0.5)
+
+	print('Blue Dark')
+	#5s of dark
+        colorWipe(strip, Color(0, 0, 0))
+        time.sleep(5)
+

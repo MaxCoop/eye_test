@@ -23,7 +23,7 @@ mask_array[:, width/2:] +=255
 #we want to visually inspect the output
 fourcc = cv2.cv.CV_FOURCC('m', 'p','4','v')
 vout = cv2.VideoWriter()
-success = vout.open('output.m4v', fourcc, fps, (width, height), True)
+success = vout.open('jesse_regime_processed.m4v', fourcc, fps, (width, height), True)
 
 
 data = []
@@ -64,7 +64,7 @@ while(cap.isOpened()):
     hist = cv2.calcHist([masked_img], [0], None, [256], [0,256])
     #no of black pixels
     data.append(hist[0])
-    #print(len(data))
+    print(len(data))
     
 cap.release()
 vout.release()
