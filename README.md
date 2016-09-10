@@ -1,5 +1,12 @@
 # Pupil measurement device
 
+## To Do
+ - [] Real time pupil detection
+ - [] Multithreaded image processing and capture
+ - [] Evaluation on different image processing techniques
+ - [] Evaluation of lighting methodologies
+
+# System description
 System designs and code for a cheap pupil measurement device that is capable of fabrication and use by non-technical people.
 Current system design uses a 3D printed google (the OpenSCAD files), and two neopixels for colour specific illumination, an IR LED controlled using a transistor and a 15 Ohm resistor.  IR LED is driven by GPIO pin 4, Neopixels are driven from GPIO 18. The google also contains the lens from a Google cardboard and photographic negative film to block visible light to the NoIR camera used for image capture.
 
