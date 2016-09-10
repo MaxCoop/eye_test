@@ -1,10 +1,10 @@
 # Pupil measurement device
 
 ## To Do
- - [] Real time pupil detection
- - [] Multithreaded image processing and capture
- - [] Evaluation on different image processing techniques
- - [] Evaluation of lighting methodologies
+ - [ ] Real time pupil detection
+ - [ ] Multithreaded image processing and capture
+ - [ ] Evaluation on different image processing techniques
+ - [ ] Evaluation of lighting methodologies
 
 # System description
 System designs and code for a cheap pupil measurement device that is capable of fabrication and use by non-technical people.
