@@ -1,5 +1,8 @@
 # Pupil measurement device
 
+#Current Process
+Capture on rpi with `flash.sh` using protocol defined in `neopixel.py` in the comms subdirectory to generate a .h264 type video file. Convert to .m4v type using VLC on OSX and then process using the `video_process.py` script with as estimated threshold of 50.
+
 ## To Do
  - [ ] Improve video processing speed
  - [ ] Real time pupil detection
