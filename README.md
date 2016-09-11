@@ -1,6 +1,7 @@
 # Pupil measurement device
 
 ## To Do
+ - [ ] Improve video processing speed
  - [ ] Real time pupil detection
  - [ ] Multithreaded image processing and capture
  - [ ] Evaluation on different image processing techniques
@@ -26,9 +27,7 @@ The process sequence is performed using OpenCV methods:
 Then black pixels from individual images are counted using `calcHist()`. This script also tries to identify the location of the pupil by returning the indexes of the maximum black pixel for image rows and columns and then plotting an area equivalent circle at that location. This will systematically overestimate the pupil measurement due to black pixel noise.
 
 # Video processing
-Videos are processed using the same process, but via the `video_process.py` script [`ython video_process.py inputvid.h264 thresholdvalue`]. this script also writes the processed frames to an m4v file for later inspection and produces a plot of the number of frames vs the number of black pixels in each.
-
-
+Videos are processed using the same process, but via the `video_process.py` script [`python video_process.py inputvid.hm4v thresholdvalue`]. This script also writes the processed frames to an m4v file for later inspection and produces a plot of the number of frames vs the number of black pixels in each.
 
 # Mobile device testing
 We also examin the potential of using a mobile camera without the IR filter removed. 
