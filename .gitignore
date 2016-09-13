@@ -1,0 +1,6 @@
+# Large Video Files
+Videofiles/
+
+# Any other produced videofiles that I have forgotten to clean up
+*.mp4
+*.avi
