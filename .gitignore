@@ -4,3 +4,5 @@ Videofiles/
 # Any other produced videofiles that I have forgotten to clean up
 *.mp4
 *.avi
+*.m4v
+*.h264
