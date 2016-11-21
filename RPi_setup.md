@@ -19,3 +19,6 @@ To pull new code from the repo:
 
 To use the camera from C programs the `camera.h` file must be in the same directory as the script runs from.
 * `#include "camera.h"` this is the camera import line.
+
+##Python Libraries
+* `sudo apt-get install python-opencv python-scipy python-numpy ipython python-setuptools python-matplotlib`
