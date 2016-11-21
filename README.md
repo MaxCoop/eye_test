@@ -19,7 +19,8 @@ Current system design uses a 3D printed google (the OpenSCAD files), and two neo
 Main script is `flash.sh` which currently uses the `raspivid` command for 24 fps image capture to `outvid.h264` and calls the script `neopixel.py` from the `` directory to perform the specific light sequences. 
 
 # Image processing
-Currently images are parsed by the `measure_pupil.py` script [`python measure_pupil.py inputimage.jpg`] 
+Currently images are parsed by the `measure_pupil.py` script [`python measure_pupil.py elf.jpg`] 
+The `elf.jpg` file is an example input for processing
 The process sequence is performed using OpenCV methods:
   - extract red channel
   - histogram normalisation - `equalizeHist()`
