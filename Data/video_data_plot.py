@@ -2,6 +2,7 @@
 
 import sys
 import matplotlib.pyplot as plt
+from scipy.signal import savgol_filter 
 
 
 datafile = sys.argv[1]
@@ -54,10 +55,27 @@ plt.figure(2, figsize=(12,6))
 plt.title(datafile)
 plt.plot([float(i)/1000000 for i in data[3]],data[1], 'r.-', label='No Median Blur')
 plt.plot([float(i)/1000000 for i in data[3]],data[2], 'b.-', label='Median Blur: '+datafile.split('_')[3][-2:])
+
+#we filter a filter using a Savitzky-Golay filter for non-periodic signals
+#using a polynomial regression over a small window of data [5 datapoint to order 1 polynomial]
+plt.plot([float(i)/1000000 for i in data[3]], savgol_filter(data[1], 5 , 1),'r--', label='No Blur filtered')
+plt.plot([float(i)/1000000 for i in data[3]], savgol_filter(data[2], 5 , 1),'b--', label='Blur filtered')
+
 #print(data)
 plt.ylim(0, m)
 plt.ylabel('Number of Black Pixels')
 plt.xlabel('Time / s',fontsize=15)
 plt.legend(loc='best')
 plt.savefig(datafile+'_plot_time.png')
+
+print('Average Frame Processing time: '+str(float(data[3][-1])/(len(data[3])*1000000)))+' s/frame'
+print('Average FPS: '+str(1000000*(float(data[0][-1])/float(data[3][-1]))))
+
+#print('Range No Median Blur: '+str(max(data[1])-min(data[1])))
+#print('Range with Median Blur: '+str(max(data[2])-min(data[2])))
+
+
+
+
+
     
