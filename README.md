@@ -16,7 +16,7 @@ Current system design uses a 3D printed google (the OpenSCAD files), and two neo
 
 Neopixels used in this project have the datasheet from here - https://cdn-shop.adafruit.com/datasheets/WS2812.pdf
 
-Intensity measurement for blue light = 200-400 mCD (milliCandela) a
+Intensity measurement for blue light = 200-400 mCD (milliCandela) according to the Neopixel datasheet
 
 
 # Scripts
