@@ -1,0 +1,475 @@
+Frame 6
+MedianBlur OFF : NOBP = 6625
+MedianBlur ON : NOBP = 5971
+Time :378620
+
+Frame 7
+MedianBlur OFF : NOBP = 6061
+MedianBlur ON : NOBP = 5409
+Time :389131
+
+Frame 8
+MedianBlur OFF : NOBP = 6274
+MedianBlur ON : NOBP = 5664
+Time :410548
+
+Frame 9
+MedianBlur OFF : NOBP = 6149
+MedianBlur ON : NOBP = 5591
+Time :389094
+
+Frame 10
+MedianBlur OFF : NOBP = 6555
+MedianBlur ON : NOBP = 5892
+Time :381551
+
+Frame 11
+MedianBlur OFF : NOBP = 6197
+MedianBlur ON : NOBP = 5691
+Time :380889
+
+Frame 12
+MedianBlur OFF : NOBP = 6420
+MedianBlur ON : NOBP = 5916
+Time :378506
+
+Frame 13
+MedianBlur OFF : NOBP = 6156
+MedianBlur ON : NOBP = 5722
+Time :379735
+
+Frame 14
+MedianBlur OFF : NOBP = 6320
+MedianBlur ON : NOBP = 5857
+Time :377725
+
+Frame 15
+MedianBlur OFF : NOBP = 6462
+MedianBlur ON : NOBP = 5903
+Time :382071
+
+Frame 16
+MedianBlur OFF : NOBP = 6457
+MedianBlur ON : NOBP = 6013
+Time :376923
+
+Frame 17
+MedianBlur OFF : NOBP = 6556
+MedianBlur ON : NOBP = 6063
+Time :497953
+
+Frame 18
+MedianBlur OFF : NOBP = 6458
+MedianBlur ON : NOBP = 5876
+Time :391783
+
+Frame 19
+MedianBlur OFF : NOBP = 6215
+MedianBlur ON : NOBP = 4981
+Time :387163
+
+Frame 20
+MedianBlur OFF : NOBP = 5671
+MedianBlur ON : NOBP = 4487
+Time :394056
+
+Frame 21
+MedianBlur OFF : NOBP = 6413
+MedianBlur ON : NOBP = 5235
+Time :392586
+
+Frame 22
+MedianBlur OFF : NOBP = 6501
+MedianBlur ON : NOBP = 5259
+Time :392418
+
+Frame 23
+MedianBlur OFF : NOBP = 5901
+MedianBlur ON : NOBP = 4949
+Time :389446
+
+Frame 24
+MedianBlur OFF : NOBP = 6517
+MedianBlur ON : NOBP = 5387
+Time :387784
+
+Frame 25
+MedianBlur OFF : NOBP = 5769
+MedianBlur ON : NOBP = 4755
+Time :390091
+
+Frame 26
+MedianBlur OFF : NOBP = 6211
+MedianBlur ON : NOBP = 5156
+Time :388252
+
+Frame 27
+MedianBlur OFF : NOBP = 5989
+MedianBlur ON : NOBP = 4894
+Time :389834
+
+Frame 28
+MedianBlur OFF : NOBP = 6031
+MedianBlur ON : NOBP = 5159
+Time :391254
+
+Frame 29
+MedianBlur OFF : NOBP = 6165
+MedianBlur ON : NOBP = 5350
+Time :421428
+
+Frame 30
+MedianBlur OFF : NOBP = 6062
+MedianBlur ON : NOBP = 5332
+Time :388937
+
+Frame 31
+MedianBlur OFF : NOBP = 6618
+MedianBlur ON : NOBP = 5699
+Time :398695
+
+Frame 32
+MedianBlur OFF : NOBP = 6396
+MedianBlur ON : NOBP = 5309
+Time :397809
+
+Frame 33
+MedianBlur OFF : NOBP = 6476
+MedianBlur ON : NOBP = 5230
+Time :392692
+
+Frame 34
+MedianBlur OFF : NOBP = 6380
+MedianBlur ON : NOBP = 5541
+Time :387024
+
+Frame 35
+MedianBlur OFF : NOBP = 6254
+MedianBlur ON : NOBP = 5542
+Time :387244
+
+Frame 36
+MedianBlur OFF : NOBP = 6339
+MedianBlur ON : NOBP = 5788
+Time :386500
+
+Frame 37
+MedianBlur OFF : NOBP = 6156
+MedianBlur ON : NOBP = 5774
+Time :391386
+
+Frame 38
+MedianBlur OFF : NOBP = 6292
+MedianBlur ON : NOBP = 5871
+Time :388920
+
+Frame 39
+MedianBlur OFF : NOBP = 6547
+MedianBlur ON : NOBP = 5986
+Time :386693
+
+Frame 40
+MedianBlur OFF : NOBP = 6189
+MedianBlur ON : NOBP = 5790
+Time :555358
+
+Frame 41
+MedianBlur OFF : NOBP = 6422
+MedianBlur ON : NOBP = 6022
+Time :518205
+
+Frame 42
+MedianBlur OFF : NOBP = 6298
+MedianBlur ON : NOBP = 5803
+Time :485752
+
+Frame 43
+MedianBlur OFF : NOBP = 6514
+MedianBlur ON : NOBP = 5988
+Time :540306
+
+Frame 44
+MedianBlur OFF : NOBP = 6527
+MedianBlur ON : NOBP = 6086
+Time :540448
+
+Frame 45
+MedianBlur OFF : NOBP = 5560
+MedianBlur ON : NOBP = 4527
+Time :538322
+
+Frame 46
+MedianBlur OFF : NOBP = 6578
+MedianBlur ON : NOBP = 6085
+Time :547948
+
+Frame 47
+MedianBlur OFF : NOBP = 6267
+MedianBlur ON : NOBP = 5301
+Time :542660
+
+Frame 48
+MedianBlur OFF : NOBP = 5982
+MedianBlur ON : NOBP = 4848
+Time :548789
+
+Frame 49
+MedianBlur OFF : NOBP = 6065
+MedianBlur ON : NOBP = 4935
+Time :540760
+
+Frame 50
+MedianBlur OFF : NOBP = 6035
+MedianBlur ON : NOBP = 4968
+Time :547222
+
+Frame 51
+MedianBlur OFF : NOBP = 6296
+MedianBlur ON : NOBP = 5220
+Time :547070
+
+Frame 52
+MedianBlur OFF : NOBP = 6147
+MedianBlur ON : NOBP = 5302
+Time :565124
+
+Frame 53
+MedianBlur OFF : NOBP = 6205
+MedianBlur ON : NOBP = 5455
+Time :555909
+
+Frame 54
+MedianBlur OFF : NOBP = 6588
+MedianBlur ON : NOBP = 5612
+Time :539639
+
+Frame 55
+MedianBlur OFF : NOBP = 6405
+MedianBlur ON : NOBP = 5893
+Time :542975
+
+Frame 56
+MedianBlur OFF : NOBP = 6046
+MedianBlur ON : NOBP = 5382
+Time :539546
+
+Frame 57
+MedianBlur OFF : NOBP = 6556
+MedianBlur ON : NOBP = 6503
+Time :546530
+
+Frame 58
+MedianBlur OFF : NOBP = 6591
+MedianBlur ON : NOBP = 6705
+Time :556070
+
+Frame 59
+MedianBlur OFF : NOBP = 6398
+MedianBlur ON : NOBP = 5501
+Time :553899
+
+Frame 60
+MedianBlur OFF : NOBP = 6606
+MedianBlur ON : NOBP = 6094
+Time :560757
+
+Frame 61
+MedianBlur OFF : NOBP = 6160
+MedianBlur ON : NOBP = 5228
+Time :570092
+
+Frame 62
+MedianBlur OFF : NOBP = 5971
+MedianBlur ON : NOBP = 5163
+Time :546272
+
+Frame 63
+MedianBlur OFF : NOBP = 6327
+MedianBlur ON : NOBP = 5635
+Time :536668
+
+Frame 64
+MedianBlur OFF : NOBP = 6505
+MedianBlur ON : NOBP = 5687
+Time :537126
+
+Frame 65
+MedianBlur OFF : NOBP = 6461
+MedianBlur ON : NOBP = 5684
+Time :541217
+
+Frame 66
+MedianBlur OFF : NOBP = 6354
+MedianBlur ON : NOBP = 5751
+Time :535073
+
+Frame 67
+MedianBlur OFF : NOBP = 6454
+MedianBlur ON : NOBP = 5820
+Time :543027
+
+Frame 68
+MedianBlur OFF : NOBP = 6568
+MedianBlur ON : NOBP = 5799
+Time :531299
+
+Frame 69
+MedianBlur OFF : NOBP = 6161
+MedianBlur ON : NOBP = 5534
+Time :533141
+
+Frame 70
+MedianBlur OFF : NOBP = 6412
+MedianBlur ON : NOBP = 5685
+Time :553164
+
+Frame 71
+MedianBlur OFF : NOBP = 6571
+MedianBlur ON : NOBP = 5912
+Time :533845
+
+Frame 72
+MedianBlur OFF : NOBP = 6546
+MedianBlur ON : NOBP = 6586
+Time :550221
+
+Frame 73
+MedianBlur OFF : NOBP = 6463
+MedianBlur ON : NOBP = 6505
+Time :550634
+
+Frame 74
+MedianBlur OFF : NOBP = 6520
+MedianBlur ON : NOBP = 6564
+Time :594301
+
+Frame 75
+MedianBlur OFF : NOBP = 6310
+MedianBlur ON : NOBP = 6266
+Time :539882
+
+Frame 76
+MedianBlur OFF : NOBP = 6424
+MedianBlur ON : NOBP = 6438
+Time :537514
+
+Frame 77
+MedianBlur OFF : NOBP = 6188
+MedianBlur ON : NOBP = 5512
+Time :532705
+
+Frame 78
+MedianBlur OFF : NOBP = 6296
+MedianBlur ON : NOBP = 5200
+Time :531794
+
+Frame 79
+MedianBlur OFF : NOBP = 6332
+MedianBlur ON : NOBP = 5685
+Time :539809
+
+Frame 80
+MedianBlur OFF : NOBP = 6172
+MedianBlur ON : NOBP = 5738
+Time :484893
+
+Frame 81
+MedianBlur OFF : NOBP = 6359
+MedianBlur ON : NOBP = 5967
+Time :483664
+
+Frame 82
+MedianBlur OFF : NOBP = 6593
+MedianBlur ON : NOBP = 6092
+Time :481989
+
+Frame 83
+MedianBlur OFF : NOBP = 6431
+MedianBlur ON : NOBP = 5976
+Time :485005
+
+Frame 84
+MedianBlur OFF : NOBP = 6602
+MedianBlur ON : NOBP = 6619
+Time :483163
+
+Frame 85
+MedianBlur OFF : NOBP = 6459
+MedianBlur ON : NOBP = 6509
+Time :541941
+
+Frame 86
+MedianBlur OFF : NOBP = 6589
+MedianBlur ON : NOBP = 6606
+Time :488293
+
+Frame 87
+MedianBlur OFF : NOBP = 6506
+MedianBlur ON : NOBP = 6592
+Time :482421
+
+Frame 88
+MedianBlur OFF : NOBP = 6325
+MedianBlur ON : NOBP = 6389
+Time :481844
+
+Frame 89
+MedianBlur OFF : NOBP = 6304
+MedianBlur ON : NOBP = 6094
+Time :497537
+
+Frame 90
+MedianBlur OFF : NOBP = 6594
+MedianBlur ON : NOBP = 6713
+Time :481190
+
+Frame 91
+MedianBlur OFF : NOBP = 6514
+MedianBlur ON : NOBP = 6550
+Time :487324
+
+Frame 92
+MedianBlur OFF : NOBP = 6556
+MedianBlur ON : NOBP = 6672
+Time :485660
+
+Frame 93
+MedianBlur OFF : NOBP = 6561
+MedianBlur ON : NOBP = 5998
+Time :494376
+
+Frame 94
+MedianBlur OFF : NOBP = 6304
+MedianBlur ON : NOBP = 6343
+Time :487031
+
+Frame 95
+MedianBlur OFF : NOBP = 6462
+MedianBlur ON : NOBP = 6521
+Time :482067
+
+Frame 96
+MedianBlur OFF : NOBP = 6613
+MedianBlur ON : NOBP = 6535
+Time :483967
+
+Frame 97
+MedianBlur OFF : NOBP = 6389
+MedianBlur ON : NOBP = 6446
+Time :482090
+
+Frame 98
+MedianBlur OFF : NOBP = 6284
+MedianBlur ON : NOBP = 5690
+Time :486628
+
+Frame 99
+MedianBlur OFF : NOBP = 6448
+MedianBlur ON : NOBP = 6516
+Time :486880
+
+Frame 100
+MedianBlur OFF : NOBP = 6390
+MedianBlur ON : NOBP = 6229
+Time :486637
+
