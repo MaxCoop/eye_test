@@ -14,6 +14,10 @@ Capture on rpi with `flash.sh` using protocol defined in `neopixel.py` in the co
 System designs and code for a cheap pupil measurement device that is capable of fabrication and use by non-technical people.
 Current system design uses a 3D printed google (the OpenSCAD files), and two neopixels for colour specific illumination, an IR LED controlled using a transistor and a 15 Ohm resistor.  IR LED is driven by GPIO pin 4, Neopixels are driven from GPIO 18. The google also contains the lens from a Google cardboard and photographic negative film to block visible light to the NoIR camera used for image capture.
 
+Neopixels used in this project have the datasheet from here - https://cdn-shop.adafruit.com/datasheets/WS2812.pdf
+
+Intensity measurement for blue light = 200-400 mCD (milliCandela) according to the Neopixel datasheet
+
 
 # Scripts
 Main script is `flash.sh` which currently uses the `raspivid` command for 24 fps image capture to `outvid.h264` and calls the script `neopixel.py` from the `` directory to perform the specific light sequences. 
