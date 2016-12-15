@@ -46,14 +46,14 @@ median = cv2.medianBlur(imgt, 5)
 
 
 ##dilation and erosion
-kernel = np.ones((11,11),np.uint8) 
+#kernel = np.ones((11,11),np.uint8) 
 
-dilated = cv2.dilate(im, kernel)
-eroded = cv2.erode(img,kernel,iterations = 1)
+#dilated = cv2.dilate(im, kernel)
+#eroded = cv2.erode(img,kernel,iterations = 1)
 
 
 ##thresholding??
-threshold = 50
+threshold = 10
 ret, thresh_img = cv2.threshold(median, threshold,255 ,cv2.THRESH_BINARY)
 
 ##note that adaptive thresholding will likely give better results
@@ -61,8 +61,8 @@ ret, thresh_img = cv2.threshold(median, threshold,255 ,cv2.THRESH_BINARY)
 #AND
 #http://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_thresholding/py_thresholding.html
 
-th2 = cv2.adaptiveThreshold(median,255,cv2.ADAPTIVE_THRESH_MEAN_C,cv2.THRESH_BINARY,11,2)
-th3 = cv2.adaptiveThreshold(median,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,11,2)
+#th2 = cv2.adaptiveThreshold(median,255,cv2.ADAPTIVE_THRESH_MEAN_C,cv2.THRESH_BINARY,11,2)
+#th3 = cv2.adaptiveThreshold(median,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,11,2)
 
 '''
 for i in range(0,255, 20):
@@ -86,12 +86,12 @@ plt.show()
 
 ####Create a whitemask for the left side of the image
 mask_array = np.zeros((shp[0], shp[1]), np.uint8)
-mask_array[:, shp[1]/2:] +=255
+mask_array[:, shp[1]/4:] +=255
 plt.imshow(mask_array, 'gray')
 plt.show()
 
 masked_img = cv2.multiply(thresh_img, mask_array)
-masked_img[:, :shp[1]/2] +=255
+masked_img[:, :shp[1]/4] +=255
 plt.imshow(masked_img)
 plt.show()
 
@@ -167,6 +167,50 @@ cv2.circle(masked_img, (ac.index(min(ac))*res, dw.index(min(dw))*res), rd, (100,
 #this could be improved by fitting for the minima rather than just selecting the minima
 
 plt.imshow(masked_img, 'gray')
+plt.show()
+
+#add Hough circle detection
+
+# Threshold the image to get only black colors
+# Convert BGR to HSV
+hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+'''
+for j in range(10,80,10):
+        ranged_image = cv2.inRange(hsv, np.array([0,0,0]), np.array([180,255,j]))
+        plt.title(j)
+        plt.imshow(ranged_image)
+        plt.show()
+'''
+#40, 60
+ranged_image = cv2.inRange(hsv, np.array([0,0,40]), np.array([180,255,70]))
+ 
+plt.imshow(ranged_image)
+plt.show()
+
+#canny edge detection
+
+canny = cv2.Canny(ranged_image, 200, 300)
+
+plt.imshow(canny, 'gray')
+plt.show()
+
+circles = cv2.HoughCircles(ranged_image,cv2.cv.CV_HOUGH_GRADIENT,minRadius=15,maxRadius=200)
+
+circles = np.uint16(np.around(circles))
+
+#rd = img[:,:,0]
+for i in circles[0,:]:
+
+    #ask which circle has the largest number of black pixels and only use that
+        
+    # draw the outer circle
+    cv2.circle(img,(i[0],i[1]),i[2],(0,255,0),2)
+    # draw the center of the circle
+    cv2.circle(img,(i[0],i[1]),2,(0,0,255),3)
+
+#plt.imshow(ranged_image)
+plt.imshow(img)
+
 plt.show()
 
 #drawcentre

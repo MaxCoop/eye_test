@@ -43,7 +43,7 @@ m = max([float(i) for i in data[2]])
 #if max([float(i) for i in data[2]]) > m:
 #    m=max([float(i) for i in data[2]])
     
-
+'''
 plt.figure(1, figsize=(12,6))
 plt.title(datafile)
 #plt.plot(data[0],data[1], 'r.-', label='No Median Blur')
@@ -54,7 +54,7 @@ plt.ylabel('Number of Black Pixels')
 plt.xlabel('Frame',fontsize=15)
 plt.legend(loc='best')
 plt.savefig(datafile+'_plot_frames.png')
-
+'''
 plt.figure(2, figsize=(12,6))
 plt.title(datafile)
 #plt.plot([float(i)/1000000 for i in data[3]],data[1], 'ro-', label='No Median Blur')
@@ -72,7 +72,7 @@ plt.plot([float(i)/1000000 for i in data[3]], avg_blur,'b.--', label='Blur filte
 var_blur = []
 
 #calculating variation measurement
-for i in range(len(data[1])):
+for i in range(len(data[2])):
     #print(data[1][i]) #data
     #print((float(data[1][i]) - float(avg_no_blur[i]))) #displacement
     #dp = (float(data[1][i]) - float(avg_no_blur[i]))**2
@@ -96,11 +96,11 @@ b_variance = 'Blur Variance: '+str(round(var_blur,2))
 #print(ttl_t)
 #print(variance)
       
-plt.text(0.45*float(data[3][-1])/1000000,0.1*int(max(data[1])),av_f_p_t, fontsize=15)
-plt.text(0.45*float(data[3][-1])/1000000,0.2*int(max(data[1])),av_fps, fontsize=15)
-plt.text(0.45*float(data[3][-1])/1000000,0.3*int(max(data[1])),ttl_t, fontsize=15)
-#plt.text(0.45*float(data[3][-1])/1000000,0.4*int(max(data[1])),nb_variance, fontsize=15)
-plt.text(0.45*float(data[3][-1])/1000000,0.4*int(max(data[1])),b_variance, fontsize=15)
+plt.text(0.45*float(data[3][-1])/1000000,0.1*int(max(data[2])),av_f_p_t, fontsize=15)
+plt.text(0.45*float(data[3][-1])/1000000,0.2*int(max(data[2])),av_fps, fontsize=15)
+plt.text(0.45*float(data[3][-1])/1000000,0.3*int(max(data[2])),ttl_t, fontsize=15)
+#plt.text(0.45*float(data[3][-1])/1000000,0.4*int(max(data[2])),nb_variance, fontsize=15)
+plt.text(0.45*float(data[3][-1])/1000000,0.4*int(max(data[2])),b_variance, fontsize=15)
 
 
 #print(data)
