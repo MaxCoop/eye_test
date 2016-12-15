@@ -15,10 +15,12 @@ Currently images are parsed by the `measure_pupil_hough.py` script [`python meas
 The `Handsomebroscaled.png` file is an example input for processing
 The process sequence is performed using OpenCV methods:
   - extract black pixels band using `cv2.inRange()`
-  - median filter (5) - `medianBlur()`
-  - Hough circle matching with initial parameters
-  - this currently omits image normalisation equaliseHist() and a Gaussian blur may be faster than median blur
+  - [median blur appears unncesessary here median filter (5) - `medianBlur()` , gaussian blur gives worse results]
+  - Hough circle matching with initial parameters [1.5, 1000, 30, 15, 5, 100]
+  - this currently omits image normalisation equaliseHist() 
 
+#Hough parameters
+A `dp` of 1.5 or 1.9 appears optimimal for early testing. Higher and lower values (with the exception of 1.3) give reasonable resukts but a worse fit. The circle distance parameter has no clear effect (so 1000 is fine for the moment).                        param1=30,param2=15,minRadius=5,maxRadius=100.
 
 ## To Do
  - [ ] Test Hough algorthim speed on RPi and vary parameters for performance.
