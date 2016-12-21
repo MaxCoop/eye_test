@@ -194,7 +194,8 @@ canny = cv2.Canny(ranged_image, 200, 300)
 plt.imshow(canny, 'gray')
 plt.show()
 
-circles = cv2.HoughCircles(ranged_image,cv2.cv.CV_HOUGH_GRADIENT,minRadius=15,maxRadius=200)
+circles = cv2.HoughCircles(ranged_image,cv2.cv.CV_HOUGH_GRADIENT,1.2,200,
+                           param1=30,param2=15,minRadius=15,maxRadius=200)
 
 circles = np.uint16(np.around(circles))
 
