@@ -42,6 +42,8 @@ Neopixels used in this project have the datasheet from here - https://cdn-shop.a
 
 Intensity measurement for blue light = 200-400 mCD (milliCandela) according to the Neopixel datasheet
 
+System uses Raspberry PI 2 B. Pinout used here -> http://pi4j.com/images/j8header-2b-large.png
+
 
 # Scripts
 Main script is `flash.sh` which currently uses the `raspivid` command for 24 fps image capture to `outvid.h264` and calls the script `neopixel.py` from the `` directory to perform the specific light sequences. 
