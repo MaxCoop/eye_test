@@ -1,0 +1,400 @@
+Frame 1
+Black Pixels = 306962
+Time :392338
+
+Frame 2
+Black Pixels = 275201
+Time :659699
+
+Frame 3
+Black Pixels = 266086
+Time :914979
+
+Frame 4
+Black Pixels = 256194
+Time :1.34943e+06
+
+Frame 5
+Black Pixels = 247525
+Time :1.60919e+06
+
+Frame 6
+Black Pixels = 242671
+Time :1.86891e+06
+
+Frame 7
+Black Pixels = 239953
+Time :2.13166e+06
+
+Frame 8
+Black Pixels = 240776
+Time :2.39382e+06
+
+Frame 9
+Black Pixels = 240830
+Time :2.65648e+06
+
+Frame 10
+Black Pixels = 243304
+Time :2.91807e+06
+
+Frame 11
+Black Pixels = 241673
+Time :3.18094e+06
+
+Frame 12
+Black Pixels = 247158
+Time :3.44189e+06
+
+Frame 13
+Black Pixels = 244580
+Time :3.70363e+06
+
+Frame 14
+Black Pixels = 241311
+Time :3.9029e+06
+
+Frame 15
+Black Pixels = 247331
+Time :4.07847e+06
+
+Frame 16
+Black Pixels = 250655
+Time :4.25425e+06
+
+Frame 17
+Black Pixels = 255235
+Time :4.42918e+06
+
+Frame 18
+Black Pixels = 255231
+Time :4.60442e+06
+
+Frame 19
+Black Pixels = 248316
+Time :4.78019e+06
+
+Frame 20
+Black Pixels = 240343
+Time :5.01362e+06
+
+Frame 21
+Black Pixels = 246057
+Time :5.27535e+06
+
+Frame 22
+Black Pixels = 247318
+Time :5.5385e+06
+
+Frame 23
+Black Pixels = 255826
+Time :5.7973e+06
+
+Frame 24
+Black Pixels = 251111
+Time :6.06047e+06
+
+Frame 25
+Black Pixels = 248153
+Time :6.31992e+06
+
+Frame 26
+Black Pixels = 255138
+Time :6.58369e+06
+
+Frame 27
+Black Pixels = 247763
+Time :6.84264e+06
+
+Frame 28
+Black Pixels = 246094
+Time :7.1077e+06
+
+Frame 29
+Black Pixels = 241352
+Time :7.37466e+06
+
+Frame 30
+Black Pixels = 243325
+Time :7.63994e+06
+
+Frame 31
+Black Pixels = 252418
+Time :7.90338e+06
+
+Frame 32
+Black Pixels = 248897
+Time :8.08689e+06
+
+Frame 33
+Black Pixels = 250001
+Time :8.26375e+06
+
+Frame 34
+Black Pixels = 250331
+Time :8.44011e+06
+
+Frame 35
+Black Pixels = 247903
+Time :8.61728e+06
+
+Frame 36
+Black Pixels = 247602
+Time :8.79299e+06
+
+Frame 37
+Black Pixels = 246739
+Time :8.96747e+06
+
+Frame 38
+Black Pixels = 247875
+Time :9.14517e+06
+
+Frame 39
+Black Pixels = 247650
+Time :9.32175e+06
+
+Frame 40
+Black Pixels = 249709
+Time :9.49856e+06
+
+Frame 41
+Black Pixels = 246830
+Time :9.67554e+06
+
+Frame 42
+Black Pixels = 251578
+Time :9.85257e+06
+
+Frame 43
+Black Pixels = 247216
+Time :1.003e+07
+
+Frame 44
+Black Pixels = 248018
+Time :1.02039e+07
+
+Frame 45
+Black Pixels = 241597
+Time :1.03787e+07
+
+Frame 46
+Black Pixels = 244863
+Time :1.0556e+07
+
+Frame 47
+Black Pixels = 245096
+Time :1.07335e+07
+
+Frame 48
+Black Pixels = 244869
+Time :1.09108e+07
+
+Frame 49
+Black Pixels = 248693
+Time :1.10875e+07
+
+Frame 50
+Black Pixels = 250120
+Time :1.12613e+07
+
+Frame 51
+Black Pixels = 243824
+Time :1.14385e+07
+
+Frame 52
+Black Pixels = 240182
+Time :1.16166e+07
+
+Frame 53
+Black Pixels = 244564
+Time :1.17936e+07
+
+Frame 54
+Black Pixels = 246384
+Time :1.19706e+07
+
+Frame 55
+Black Pixels = 242135
+Time :1.2148e+07
+
+Frame 56
+Black Pixels = 240100
+Time :1.23259e+07
+
+Frame 57
+Black Pixels = 242017
+Time :1.25033e+07
+
+Frame 58
+Black Pixels = 242419
+Time :1.26814e+07
+
+Frame 59
+Black Pixels = 241399
+Time :1.2859e+07
+
+Frame 60
+Black Pixels = 240886
+Time :1.30364e+07
+
+Frame 61
+Black Pixels = 250536
+Time :1.32133e+07
+
+Frame 62
+Black Pixels = 246191
+Time :1.33902e+07
+
+Frame 63
+Black Pixels = 250252
+Time :1.35648e+07
+
+Frame 64
+Black Pixels = 252596
+Time :1.37389e+07
+
+Frame 65
+Black Pixels = 251535
+Time :1.3915e+07
+
+Frame 66
+Black Pixels = 245605
+Time :1.40921e+07
+
+Frame 67
+Black Pixels = 242172
+Time :1.42687e+07
+
+Frame 68
+Black Pixels = 235812
+Time :1.44484e+07
+
+Frame 69
+Black Pixels = 241711
+Time :1.4624e+07
+
+Frame 70
+Black Pixels = 241116
+Time :1.48004e+07
+
+Frame 71
+Black Pixels = 242578
+Time :1.49786e+07
+
+Frame 72
+Black Pixels = 252727
+Time :1.51557e+07
+
+Frame 73
+Black Pixels = 252688
+Time :1.53309e+07
+
+Frame 74
+Black Pixels = 250620
+Time :1.55075e+07
+
+Frame 75
+Black Pixels = 250246
+Time :1.56804e+07
+
+Frame 76
+Black Pixels = 254504
+Time :1.58543e+07
+
+Frame 77
+Black Pixels = 242382
+Time :1.60311e+07
+
+Frame 78
+Black Pixels = 241414
+Time :1.62065e+07
+
+Frame 79
+Black Pixels = 242009
+Time :1.63833e+07
+
+Frame 80
+Black Pixels = 240681
+Time :1.65585e+07
+
+Frame 81
+Black Pixels = 241405
+Time :1.67344e+07
+
+Frame 82
+Black Pixels = 239616
+Time :1.69122e+07
+
+Frame 83
+Black Pixels = 241850
+Time :1.70867e+07
+
+Frame 84
+Black Pixels = 243599
+Time :1.72642e+07
+
+Frame 85
+Black Pixels = 242906
+Time :1.74417e+07
+
+Frame 86
+Black Pixels = 244622
+Time :1.7619e+07
+
+Frame 87
+Black Pixels = 242977
+Time :1.77964e+07
+
+Frame 88
+Black Pixels = 245557
+Time :1.79723e+07
+
+Frame 89
+Black Pixels = 247202
+Time :1.81471e+07
+
+Frame 90
+Black Pixels = 245149
+Time :1.83245e+07
+
+Frame 91
+Black Pixels = 250227
+Time :1.85009e+07
+
+Frame 92
+Black Pixels = 254701
+Time :1.86752e+07
+
+Frame 93
+Black Pixels = 258519
+Time :1.8886e+07
+
+Frame 94
+Black Pixels = 252350
+Time :1.90631e+07
+
+Frame 95
+Black Pixels = 248377
+Time :1.92386e+07
+
+Frame 96
+Black Pixels = 244268
+Time :1.94164e+07
+
+Frame 97
+Black Pixels = 242228
+Time :1.9595e+07
+
+Frame 98
+Black Pixels = 245431
+Time :1.97696e+07
+
+Frame 99
+Black Pixels = 246721
+Time :1.99811e+07
+
+Frame 100
+Black Pixels = 248417
+Time :2.02407e+07
+

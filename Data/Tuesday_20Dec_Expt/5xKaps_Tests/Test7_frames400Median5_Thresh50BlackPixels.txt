@@ -1,0 +1,2807 @@
+Frame 0
+Black Pixels = 4584
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :143882
+
+Frame 1
+Black Pixels = 6371
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :188193
+
+Frame 2
+Black Pixels = 5608
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :233761
+
+Frame 3
+Black Pixels = 5635
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :277322
+
+Frame 4
+Black Pixels = 5022
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :438720
+
+Frame 5
+Black Pixels = 4971
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :490853
+
+Frame 6
+Black Pixels = 5007
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :539859
+
+Frame 7
+Black Pixels = 5002
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :590736
+
+Frame 8
+Black Pixels = 5024
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :641480
+
+Frame 9
+Black Pixels = 5121
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :690863
+
+Frame 10
+Black Pixels = 5156
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :744029
+
+Frame 11
+Black Pixels = 5136
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :795970
+
+Frame 12
+Black Pixels = 5130
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :847781
+
+Frame 13
+Black Pixels = 5190
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :910056
+
+Frame 14
+Black Pixels = 5218
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :979784
+
+Frame 15
+Black Pixels = 5270
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.0533e+06
+
+Frame 16
+Black Pixels = 5685
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.12591e+06
+
+Frame 17
+Black Pixels = 5871
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.19708e+06
+
+Frame 18
+Black Pixels = 5742
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.26826e+06
+
+Frame 19
+Black Pixels = 5770
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.3398e+06
+
+Frame 20
+Black Pixels = 5933
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.41102e+06
+
+Frame 21
+Black Pixels = 6038
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.48198e+06
+
+Frame 22
+Black Pixels = 5909
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.55301e+06
+
+Frame 23
+Black Pixels = 5900
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.62478e+06
+
+Frame 24
+Black Pixels = 5813
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.69639e+06
+
+Frame 25
+Black Pixels = 5802
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.76826e+06
+
+Frame 26
+Black Pixels = 6234
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.84043e+06
+
+Frame 27
+Black Pixels = 6316
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.91289e+06
+
+Frame 28
+Black Pixels = 6416
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.98365e+06
+
+Frame 29
+Black Pixels = 6204
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.05506e+06
+
+Frame 30
+Black Pixels = 6235
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.12693e+06
+
+Frame 31
+Black Pixels = 6130
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.19871e+06
+
+Frame 32
+Black Pixels = 6129
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.27182e+06
+
+Frame 33
+Black Pixels = 6263
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.34132e+06
+
+Frame 34
+Black Pixels = 6708
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.41255e+06
+
+Frame 35
+Black Pixels = 6671
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.48442e+06
+
+Frame 36
+Black Pixels = 6655
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.55672e+06
+
+Frame 37
+Black Pixels = 6244
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.62794e+06
+
+Frame 38
+Black Pixels = 5766
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.69862e+06
+
+Frame 39
+Black Pixels = 5902
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.76987e+06
+
+Frame 40
+Black Pixels = 4904
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.84515e+06
+
+Frame 41
+Black Pixels = 5092
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.91656e+06
+
+Frame 42
+Black Pixels = 5361
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.98789e+06
+
+Frame 43
+Black Pixels = 5296
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :3.05817e+06
+
+Frame 44
+Black Pixels = 5247
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :3.12892e+06
+
+Frame 45
+Black Pixels = 5253
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :3.20029e+06
+
+Frame 46
+Black Pixels = 5305
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :3.27194e+06
+
+Frame 47
+Black Pixels = 5228
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :3.32634e+06
+
+Frame 48
+Black Pixels = 5161
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :3.37804e+06
+
+Frame 49
+Black Pixels = 5151
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :3.42769e+06
+
+Frame 50
+Black Pixels = 5170
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :3.48013e+06
+
+Frame 51
+Black Pixels = 5504
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :3.53241e+06
+
+Frame 52
+Black Pixels = 5504
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :3.58222e+06
+
+Frame 53
+Black Pixels = 5352
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :3.63132e+06
+
+Frame 54
+Black Pixels = 5363
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :3.68335e+06
+
+Frame 55
+Black Pixels = 5338
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :3.73376e+06
+
+Frame 56
+Black Pixels = 5273
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :3.78569e+06
+
+Frame 57
+Black Pixels = 5122
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :3.83626e+06
+
+Frame 58
+Black Pixels = 5162
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :3.88901e+06
+
+Frame 59
+Black Pixels = 5217
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :3.94047e+06
+
+Frame 60
+Black Pixels = 5374
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :3.99163e+06
+
+Frame 61
+Black Pixels = 5383
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :4.04382e+06
+
+Frame 62
+Black Pixels = 5460
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :4.11134e+06
+
+Frame 63
+Black Pixels = 4825
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :4.18188e+06
+
+Frame 64
+Black Pixels = 4870
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :4.2519e+06
+
+Frame 65
+Black Pixels = 5206
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :4.3238e+06
+
+Frame 66
+Black Pixels = 5157
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :4.39411e+06
+
+Frame 67
+Black Pixels = 5080
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :4.4646e+06
+
+Frame 68
+Black Pixels = 5391
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :4.53536e+06
+
+Frame 69
+Black Pixels = 5540
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :4.60495e+06
+
+Frame 70
+Black Pixels = 5509
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :4.67611e+06
+
+Frame 71
+Black Pixels = 5347
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :4.74721e+06
+
+Frame 72
+Black Pixels = 5318
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :4.82012e+06
+
+Frame 73
+Black Pixels = 5367
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :4.89324e+06
+
+Frame 74
+Black Pixels = 5289
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :4.96658e+06
+
+Frame 75
+Black Pixels = 5282
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :5.0376e+06
+
+Frame 76
+Black Pixels = 5265
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :5.11091e+06
+
+Frame 77
+Black Pixels = 5313
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :5.1831e+06
+
+Frame 78
+Black Pixels = 5230
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :5.25417e+06
+
+Frame 79
+Black Pixels = 5743
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :5.32411e+06
+
+Frame 80
+Black Pixels = 5988
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :5.39391e+06
+
+Frame 81
+Black Pixels = 5982
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :5.46382e+06
+
+Frame 82
+Black Pixels = 5975
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :5.53373e+06
+
+Frame 83
+Black Pixels = 6097
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :5.6034e+06
+
+Frame 84
+Black Pixels = 5690
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :5.67278e+06
+
+Frame 85
+Black Pixels = 5692
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :5.74234e+06
+
+Frame 86
+Black Pixels = 5778
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :5.81189e+06
+
+Frame 87
+Black Pixels = 5771
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :5.88163e+06
+
+Frame 88
+Black Pixels = 5756
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :5.95134e+06
+
+Frame 89
+Black Pixels = 5830
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :6.02109e+06
+
+Frame 90
+Black Pixels = 5813
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :6.09093e+06
+
+Frame 91
+Black Pixels = 5760
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :6.1614e+06
+
+Frame 92
+Black Pixels = 4891
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :6.23134e+06
+
+Frame 93
+Black Pixels = 5043
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :6.30197e+06
+
+Frame 94
+Black Pixels = 5650
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :6.37307e+06
+
+Frame 95
+Black Pixels = 5979
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :6.42638e+06
+
+Frame 96
+Black Pixels = 6232
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :6.47674e+06
+
+Frame 97
+Black Pixels = 6187
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :6.52894e+06
+
+Frame 98
+Black Pixels = 6113
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :6.57972e+06
+
+Frame 99
+Black Pixels = 6134
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :6.63267e+06
+
+Frame 100
+Black Pixels = 6105
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :6.68381e+06
+
+Frame 101
+Black Pixels = 5994
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :6.73619e+06
+
+Frame 102
+Black Pixels = 6008
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :6.78757e+06
+
+Frame 103
+Black Pixels = 5335
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :6.83859e+06
+
+Frame 104
+Black Pixels = 5161
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :6.88738e+06
+
+Frame 105
+Black Pixels = 5239
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :6.93978e+06
+
+Frame 106
+Black Pixels = 5463
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :6.99425e+06
+
+Frame 107
+Black Pixels = 5513
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :7.06855e+06
+
+Frame 108
+Black Pixels = 5376
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :7.1421e+06
+
+Frame 109
+Black Pixels = 5806
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :7.21268e+06
+
+Frame 110
+Black Pixels = 5538
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :7.28318e+06
+
+Frame 111
+Black Pixels = 5930
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :7.35335e+06
+
+Frame 112
+Black Pixels = 6036
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :7.42406e+06
+
+Frame 113
+Black Pixels = 6045
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :7.4948e+06
+
+Frame 114
+Black Pixels = 6024
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :7.56539e+06
+
+Frame 115
+Black Pixels = 6065
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :7.63593e+06
+
+Frame 116
+Black Pixels = 6174
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :7.70696e+06
+
+Frame 117
+Black Pixels = 6013
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :7.78108e+06
+
+Frame 118
+Black Pixels = 5920
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :7.85312e+06
+
+Frame 119
+Black Pixels = 5996
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :7.92336e+06
+
+Frame 120
+Black Pixels = 6009
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :7.99444e+06
+
+Frame 121
+Black Pixels = 5639
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :8.06434e+06
+
+Frame 122
+Black Pixels = 5049
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :8.1346e+06
+
+Frame 123
+Black Pixels = 5118
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :8.20486e+06
+
+Frame 124
+Black Pixels = 5050
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :8.276e+06
+
+Frame 125
+Black Pixels = 5107
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :8.34796e+06
+
+Frame 126
+Black Pixels = 5683
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :8.41754e+06
+
+Frame 127
+Black Pixels = 5515
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :8.48729e+06
+
+Frame 128
+Black Pixels = 5539
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :8.55596e+06
+
+Frame 129
+Black Pixels = 5608
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :8.62505e+06
+
+Frame 130
+Black Pixels = 6335
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :8.69472e+06
+
+Frame 131
+Black Pixels = 5858
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :8.76434e+06
+
+Frame 132
+Black Pixels = 6068
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :8.83475e+06
+
+Frame 133
+Black Pixels = 6060
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :8.90471e+06
+
+Frame 134
+Black Pixels = 5180
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :8.97446e+06
+
+Frame 135
+Black Pixels = 5040
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :9.04481e+06
+
+Frame 136
+Black Pixels = 5189
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :9.11522e+06
+
+Frame 137
+Black Pixels = 5938
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :9.18491e+06
+
+Frame 138
+Black Pixels = 5987
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :9.2434e+06
+
+Frame 139
+Black Pixels = 5925
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :9.29437e+06
+
+Frame 140
+Black Pixels = 5862
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :9.3447e+06
+
+Frame 141
+Black Pixels = 5867
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :9.39693e+06
+
+Frame 142
+Black Pixels = 5988
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :9.44885e+06
+
+Frame 143
+Black Pixels = 6026
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :9.49883e+06
+
+Frame 144
+Black Pixels = 5721
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :9.55071e+06
+
+Frame 145
+Black Pixels = 5621
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :9.60125e+06
+
+Frame 146
+Black Pixels = 5604
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :9.65364e+06
+
+Frame 147
+Black Pixels = 5685
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :9.70459e+06
+
+Frame 148
+Black Pixels = 5692
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :9.75602e+06
+
+Frame 149
+Black Pixels = 6048
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :9.80709e+06
+
+Frame 150
+Black Pixels = 6227
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :9.85897e+06
+
+Frame 151
+Black Pixels = 6125
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :9.90788e+06
+
+Frame 152
+Black Pixels = 6138
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :9.95862e+06
+
+Frame 153
+Black Pixels = 6245
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.00108e+07
+
+Frame 154
+Black Pixels = 6244
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.00621e+07
+
+Frame 155
+Black Pixels = 6312
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.01143e+07
+
+Frame 156
+Black Pixels = 6184
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.0166e+07
+
+Frame 157
+Black Pixels = 5734
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.02182e+07
+
+Frame 158
+Black Pixels = 5766
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.0269e+07
+
+Frame 159
+Black Pixels = 5732
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.0331e+07
+
+Frame 160
+Black Pixels = 6161
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.04011e+07
+
+Frame 161
+Black Pixels = 6384
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.0471e+07
+
+Frame 162
+Black Pixels = 6613
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.05405e+07
+
+Frame 163
+Black Pixels = 6460
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.0612e+07
+
+Frame 164
+Black Pixels = 6013
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.06838e+07
+
+Frame 165
+Black Pixels = 6051
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.07552e+07
+
+Frame 166
+Black Pixels = 6092
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.08279e+07
+
+Frame 167
+Black Pixels = 6177
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.08973e+07
+
+Frame 168
+Black Pixels = 6240
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.09667e+07
+
+Frame 169
+Black Pixels = 6265
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.10362e+07
+
+Frame 170
+Black Pixels = 6384
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.11065e+07
+
+Frame 171
+Black Pixels = 6452
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.1176e+07
+
+Frame 172
+Black Pixels = 6204
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.12466e+07
+
+Frame 173
+Black Pixels = 6029
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.13163e+07
+
+Frame 174
+Black Pixels = 6103
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.13868e+07
+
+Frame 175
+Black Pixels = 6074
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.14571e+07
+
+Frame 176
+Black Pixels = 5741
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.15287e+07
+
+Frame 177
+Black Pixels = 5769
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.1598e+07
+
+Frame 178
+Black Pixels = 5674
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.16684e+07
+
+Frame 179
+Black Pixels = 5814
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.17376e+07
+
+Frame 180
+Black Pixels = 6041
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.18073e+07
+
+Frame 181
+Black Pixels = 5855
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.18763e+07
+
+Frame 182
+Black Pixels = 6182
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.19461e+07
+
+Frame 183
+Black Pixels = 6185
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.20154e+07
+
+Frame 184
+Black Pixels = 5910
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.20858e+07
+
+Frame 185
+Black Pixels = 5956
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.21559e+07
+
+Frame 186
+Black Pixels = 5691
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.22262e+07
+
+Frame 187
+Black Pixels = 5636
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.22968e+07
+
+Frame 188
+Black Pixels = 5756
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.23676e+07
+
+Frame 189
+Black Pixels = 5337
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.24389e+07
+
+Frame 190
+Black Pixels = 5146
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.25101e+07
+
+Frame 191
+Black Pixels = 5203
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.25635e+07
+
+Frame 192
+Black Pixels = 5125
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.26161e+07
+
+Frame 193
+Black Pixels = 5113
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.26683e+07
+
+Frame 194
+Black Pixels = 5937
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.27178e+07
+
+Frame 195
+Black Pixels = 5832
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.27687e+07
+
+Frame 196
+Black Pixels = 5933
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.2822e+07
+
+Frame 197
+Black Pixels = 5901
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.28718e+07
+
+Frame 198
+Black Pixels = 5958
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.29211e+07
+
+Frame 199
+Black Pixels = 6022
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.29704e+07
+
+Frame 200
+Black Pixels = 5970
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.30209e+07
+
+Frame 201
+Black Pixels = 5806
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.30708e+07
+
+Frame 202
+Black Pixels = 5860
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.31236e+07
+
+Frame 203
+Black Pixels = 5917
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.31722e+07
+
+Frame 204
+Black Pixels = 5931
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.32226e+07
+
+Frame 205
+Black Pixels = 6058
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.32733e+07
+
+Frame 206
+Black Pixels = 6095
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.33221e+07
+
+Frame 207
+Black Pixels = 6128
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.33735e+07
+
+Frame 208
+Black Pixels = 5926
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.34247e+07
+
+Frame 209
+Black Pixels = 5775
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.3476e+07
+
+Frame 210
+Black Pixels = 5602
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.35263e+07
+
+Frame 211
+Black Pixels = 5620
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.35786e+07
+
+Frame 212
+Black Pixels = 5435
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.36307e+07
+
+Frame 213
+Black Pixels = 5452
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.3683e+07
+
+Frame 214
+Black Pixels = 5590
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.37373e+07
+
+Frame 215
+Black Pixels = 5594
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.37889e+07
+
+Frame 216
+Black Pixels = 5564
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.38413e+07
+
+Frame 217
+Black Pixels = 5554
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.38941e+07
+
+Frame 218
+Black Pixels = 5433
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.39465e+07
+
+Frame 219
+Black Pixels = 5519
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.39962e+07
+
+Frame 220
+Black Pixels = 5400
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.40471e+07
+
+Frame 221
+Black Pixels = 5275
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.41004e+07
+
+Frame 222
+Black Pixels = 5372
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.41526e+07
+
+Frame 223
+Black Pixels = 5260
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.4205e+07
+
+Frame 224
+Black Pixels = 5342
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.42582e+07
+
+Frame 225
+Black Pixels = 5323
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.43096e+07
+
+Frame 226
+Black Pixels = 5221
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.43606e+07
+
+Frame 227
+Black Pixels = 5216
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.44127e+07
+
+Frame 228
+Black Pixels = 5241
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.44659e+07
+
+Frame 229
+Black Pixels = 5161
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.45192e+07
+
+Frame 230
+Black Pixels = 5352
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.45706e+07
+
+Frame 231
+Black Pixels = 5253
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.4624e+07
+
+Frame 232
+Black Pixels = 5624
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.46756e+07
+
+Frame 233
+Black Pixels = 5607
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.47283e+07
+
+Frame 234
+Black Pixels = 5704
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.47793e+07
+
+Frame 235
+Black Pixels = 5576
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.483e+07
+
+Frame 236
+Black Pixels = 5531
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.48819e+07
+
+Frame 237
+Black Pixels = 5666
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.49473e+07
+
+Frame 238
+Black Pixels = 5507
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.50167e+07
+
+Frame 239
+Black Pixels = 5137
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.5086e+07
+
+Frame 240
+Black Pixels = 4175
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.51558e+07
+
+Frame 241
+Black Pixels = 3579
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.5229e+07
+
+Frame 242
+Black Pixels = 3008
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.53009e+07
+
+Frame 243
+Black Pixels = 2576
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.53719e+07
+
+Frame 244
+Black Pixels = 2296
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.54425e+07
+
+Frame 245
+Black Pixels = 2034
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.55153e+07
+
+Frame 246
+Black Pixels = 1996
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.55874e+07
+
+Frame 247
+Black Pixels = 1820
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.56581e+07
+
+Frame 248
+Black Pixels = 1854
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.5728e+07
+
+Frame 249
+Black Pixels = 1922
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.5799e+07
+
+Frame 250
+Black Pixels = 2101
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.58707e+07
+
+Frame 251
+Black Pixels = 2267
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.59449e+07
+
+Frame 252
+Black Pixels = 2450
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.60165e+07
+
+Frame 253
+Black Pixels = 2742
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.60896e+07
+
+Frame 254
+Black Pixels = 2864
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.61606e+07
+
+Frame 255
+Black Pixels = 3181
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.62298e+07
+
+Frame 256
+Black Pixels = 3299
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.63006e+07
+
+Frame 257
+Black Pixels = 3398
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.63718e+07
+
+Frame 258
+Black Pixels = 3465
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.64441e+07
+
+Frame 259
+Black Pixels = 3527
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.65182e+07
+
+Frame 260
+Black Pixels = 3992
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.6592e+07
+
+Frame 261
+Black Pixels = 4061
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.66636e+07
+
+Frame 262
+Black Pixels = 4123
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.67353e+07
+
+Frame 263
+Black Pixels = 4128
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.68063e+07
+
+Frame 264
+Black Pixels = 4105
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.68777e+07
+
+Frame 265
+Black Pixels = 4074
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.69494e+07
+
+Frame 266
+Black Pixels = 3950
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.70207e+07
+
+Frame 267
+Black Pixels = 4145
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.70917e+07
+
+Frame 268
+Black Pixels = 4204
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.71632e+07
+
+Frame 269
+Black Pixels = 4032
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.72344e+07
+
+Frame 270
+Black Pixels = 4187
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.73059e+07
+
+Frame 271
+Black Pixels = 4173
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.73604e+07
+
+Frame 272
+Black Pixels = 4231
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.74124e+07
+
+Frame 273
+Black Pixels = 4106
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.74633e+07
+
+Frame 274
+Black Pixels = 4511
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.75165e+07
+
+Frame 275
+Black Pixels = 4638
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.75693e+07
+
+Frame 276
+Black Pixels = 4649
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.76222e+07
+
+Frame 277
+Black Pixels = 4616
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.76735e+07
+
+Frame 278
+Black Pixels = 4629
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.77257e+07
+
+Frame 279
+Black Pixels = 4148
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.77788e+07
+
+Frame 280
+Black Pixels = 4306
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.78318e+07
+
+Frame 281
+Black Pixels = 4277
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.78817e+07
+
+Frame 282
+Black Pixels = 4813
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.79326e+07
+
+Frame 283
+Black Pixels = 4761
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.79839e+07
+
+Frame 284
+Black Pixels = 4747
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.8035e+07
+
+Frame 285
+Black Pixels = 4735
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.80858e+07
+
+Frame 286
+Black Pixels = 4794
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.81361e+07
+
+Frame 287
+Black Pixels = 4887
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.81866e+07
+
+Frame 288
+Black Pixels = 4818
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.82397e+07
+
+Frame 289
+Black Pixels = 4883
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.82912e+07
+
+Frame 290
+Black Pixels = 4825
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.83436e+07
+
+Frame 291
+Black Pixels = 4578
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.83959e+07
+
+Frame 292
+Black Pixels = 4546
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.84465e+07
+
+Frame 293
+Black Pixels = 4535
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.84998e+07
+
+Frame 294
+Black Pixels = 4134
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.85511e+07
+
+Frame 295
+Black Pixels = 4049
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.86026e+07
+
+Frame 296
+Black Pixels = 4067
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.86545e+07
+
+Frame 297
+Black Pixels = 4154
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.87042e+07
+
+Frame 298
+Black Pixels = 4169
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.87561e+07
+
+Frame 299
+Black Pixels = 4765
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.88076e+07
+
+Frame 300
+Black Pixels = 4852
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.8859e+07
+
+Frame 301
+Black Pixels = 4700
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.89118e+07
+
+Frame 302
+Black Pixels = 4679
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.89627e+07
+
+Frame 303
+Black Pixels = 4770
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.90135e+07
+
+Frame 304
+Black Pixels = 4922
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.90658e+07
+
+Frame 305
+Black Pixels = 4832
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.91175e+07
+
+Frame 306
+Black Pixels = 4831
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.91687e+07
+
+Frame 307
+Black Pixels = 4816
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.92199e+07
+
+Frame 308
+Black Pixels = 4838
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.92723e+07
+
+Frame 309
+Black Pixels = 4225
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.93246e+07
+
+Frame 310
+Black Pixels = 4271
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.93765e+07
+
+Frame 311
+Black Pixels = 4265
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.94249e+07
+
+Frame 312
+Black Pixels = 4186
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.94766e+07
+
+Frame 313
+Black Pixels = 4257
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.95275e+07
+
+Frame 314
+Black Pixels = 4051
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.95801e+07
+
+Frame 315
+Black Pixels = 4273
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.96307e+07
+
+Frame 316
+Black Pixels = 4903
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.96821e+07
+
+Frame 317
+Black Pixels = 4930
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.97329e+07
+
+Frame 318
+Black Pixels = 5025
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.97948e+07
+
+Frame 319
+Black Pixels = 5127
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.98556e+07
+
+Frame 320
+Black Pixels = 4985
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.99059e+07
+
+Frame 321
+Black Pixels = 5022
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :1.99539e+07
+
+Frame 322
+Black Pixels = 4619
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.00046e+07
+
+Frame 323
+Black Pixels = 4617
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.00522e+07
+
+Frame 324
+Black Pixels = 4621
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.01018e+07
+
+Frame 325
+Black Pixels = 4576
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.015e+07
+
+Frame 326
+Black Pixels = 4612
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.02009e+07
+
+Frame 327
+Black Pixels = 4619
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.02514e+07
+
+Frame 328
+Black Pixels = 4569
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.03031e+07
+
+Frame 329
+Black Pixels = 4533
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.0353e+07
+
+Frame 330
+Black Pixels = 4364
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.04007e+07
+
+Frame 331
+Black Pixels = 4479
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.04523e+07
+
+Frame 332
+Black Pixels = 4581
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.05021e+07
+
+Frame 333
+Black Pixels = 4613
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.05649e+07
+
+Frame 334
+Black Pixels = 4675
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.06371e+07
+
+Frame 335
+Black Pixels = 4733
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.07071e+07
+
+Frame 336
+Black Pixels = 4888
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.0779e+07
+
+Frame 337
+Black Pixels = 4876
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.08508e+07
+
+Frame 338
+Black Pixels = 4929
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.09226e+07
+
+Frame 339
+Black Pixels = 4845
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.09931e+07
+
+Frame 340
+Black Pixels = 5196
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.10625e+07
+
+Frame 341
+Black Pixels = 5337
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.11315e+07
+
+Frame 342
+Black Pixels = 5367
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.12005e+07
+
+Frame 343
+Black Pixels = 5257
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.12699e+07
+
+Frame 344
+Black Pixels = 5265
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.13391e+07
+
+Frame 345
+Black Pixels = 5248
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.14078e+07
+
+Frame 346
+Black Pixels = 5294
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.14767e+07
+
+Frame 347
+Black Pixels = 5340
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.15458e+07
+
+Frame 348
+Black Pixels = 5326
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.16158e+07
+
+Frame 349
+Black Pixels = 5474
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.16857e+07
+
+Frame 350
+Black Pixels = 5410
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.17555e+07
+
+Frame 351
+Black Pixels = 5492
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.18254e+07
+
+Frame 352
+Black Pixels = 5424
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.18965e+07
+
+Frame 353
+Black Pixels = 5357
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.19663e+07
+
+Frame 354
+Black Pixels = 5288
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.2037e+07
+
+Frame 355
+Black Pixels = 5309
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.21065e+07
+
+Frame 356
+Black Pixels = 5404
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.21779e+07
+
+Frame 357
+Black Pixels = 5262
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.22483e+07
+
+Frame 358
+Black Pixels = 5519
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.23176e+07
+
+Frame 359
+Black Pixels = 5582
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.2387e+07
+
+Frame 360
+Black Pixels = 5413
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.24567e+07
+
+Frame 361
+Black Pixels = 5451
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.25266e+07
+
+Frame 362
+Black Pixels = 5654
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.25966e+07
+
+Frame 363
+Black Pixels = 5584
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.26656e+07
+
+Frame 364
+Black Pixels = 5719
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.27359e+07
+
+Frame 365
+Black Pixels = 5654
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.28069e+07
+
+Frame 366
+Black Pixels = 5571
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.28762e+07
+
+Frame 367
+Black Pixels = 5683
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.29454e+07
+
+Frame 368
+Black Pixels = 5670
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.29984e+07
+
+Frame 369
+Black Pixels = 5629
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.30499e+07
+
+Frame 370
+Black Pixels = 5570
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.31022e+07
+
+Frame 371
+Black Pixels = 5566
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.31729e+07
+
+Frame 372
+Black Pixels = 5520
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.32427e+07
+
+Frame 373
+Black Pixels = 5657
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.3313e+07
+
+Frame 374
+Black Pixels = 5718
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.33816e+07
+
+Frame 375
+Black Pixels = 5676
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.34538e+07
+
+Frame 376
+Black Pixels = 5409
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.35245e+07
+
+Frame 377
+Black Pixels = 5429
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.35955e+07
+
+Frame 378
+Black Pixels = 5671
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.36668e+07
+
+Frame 379
+Black Pixels = 5747
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.37363e+07
+
+Frame 380
+Black Pixels = 5498
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.3806e+07
+
+Frame 381
+Black Pixels = 5546
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.38745e+07
+
+Frame 382
+Black Pixels = 5902
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.3944e+07
+
+Frame 383
+Black Pixels = 6067
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.40158e+07
+
+Frame 384
+Black Pixels = 5874
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.40872e+07
+
+Frame 385
+Black Pixels = 6025
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.41571e+07
+
+Frame 386
+Black Pixels = 6146
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.42273e+07
+
+Frame 387
+Black Pixels = 5910
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.42978e+07
+
+Frame 388
+Black Pixels = 5818
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.43678e+07
+
+Frame 389
+Black Pixels = 5910
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.44377e+07
+
+Frame 390
+Black Pixels = 5946
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.45121e+07
+
+Frame 391
+Black Pixels = 6170
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.45841e+07
+
+Frame 392
+Black Pixels = 6157
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.46549e+07
+
+Frame 393
+Black Pixels = 6069
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.47241e+07
+
+Frame 394
+Black Pixels = 6143
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.47934e+07
+
+Frame 395
+Black Pixels = 6085
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.48629e+07
+
+Frame 396
+Black Pixels = 6213
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.49332e+07
+
+Frame 397
+Black Pixels = 6231
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.50032e+07
+
+Frame 398
+Black Pixels = 5712
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.50734e+07
+
+Frame 399
+Black Pixels = 5710
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.51427e+07
+
+Frame 400
+Black Pixels = 5800
+Hough Radius = 0
+Hough x = 0
+Hough y = 0
+Time :2.52123e+07
+

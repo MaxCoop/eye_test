@@ -23,7 +23,7 @@ mask_array[:, width/2:] +=255
 #we want to visually inspect the output
 fourcc = cv2.cv.CV_FOURCC('m', 'p','4','v')
 vout = cv2.VideoWriter()
-success = vout.open('jesse_regime_processed.m4v', fourcc, fps, (width, height), True)
+success = vout.open(sys.argv[1]+'T'+sys.argv[2]+'_processed.m4v', fourcc, fps, (width, height), True)
 
 
 data = []

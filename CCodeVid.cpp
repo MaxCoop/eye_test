@@ -68,16 +68,8 @@ int main(int argc, char** argv)
     cv::Mat bgr[3];   //destination array 
     split(image,bgr);//split source (RED COLOUR AT THIS STAGE)
 
-     //Note: OpenCV uses BGR color order in this case only dealing with RED
-    //imwrite("blue.png",bgr[0]); //blue channel
-    // imwrite("green.png",bgr[1]); //green channel
-    // imwrite("red.png",bgr[2]); //red channel
-
     cv::Mat RedImage = bgr[2];
     imwrite("RedImage.png",RedImage);
-
-    ///Convert to grayscale
-   // cv::cvtColor(Image, Image, CV_BGR2GRAY);
 
 
          //Apply histogram Equalization
