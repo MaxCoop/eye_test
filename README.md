@@ -41,7 +41,7 @@ Current system design uses a 3D printed google (the OpenSCAD files), and two neo
 Neopixels used in this project have the datasheet from here - https://cdn-shop.adafruit.com/datasheets/WS2812.pdf
 
 3D Model for Neopixel used in this project can be found here: https://grabcad.com/library/neopixelring-16x-1/details?folder_id=1182174
-
+3D Model for Eyepiece used in this project can be found here: https://grabcad.com/library/eyecup
 Intensity measurement for blue light = 200-400 mCD (milliCandela) according to the Neopixel datasheet
 
 System uses Raspberry PI 2 B. Pinout used here -> http://pi4j.com/images/j8header-2b-large.png
