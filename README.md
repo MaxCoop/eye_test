@@ -43,7 +43,9 @@ Neopixels used in this project have the datasheet from here - https://cdn-shop.a
 Intensity measurement for blue light = 200-400 mCD (milliCandela) according to the Neopixel datasheet
 
 3D Model for Neopixel used in this project can be found here: https://grabcad.com/library/neopixelring-16x-1/details?folder_id=1182174
+
 3D Model for Eyepiece used in this project can be found here: https://grabcad.com/library/eyecup
+
 3D Model for Raspberry Pi used in Assembly can be found here: https://grabcad.com/library/raspberry-pi-model-b-2
 
 
