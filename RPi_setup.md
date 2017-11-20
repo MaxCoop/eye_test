@@ -21,6 +21,7 @@ Then clone code from repo
 
 You will also need to get teh neopixel control library downloaded and working by following instructions here:
 * https://learn.adafruit.com/neopixels-on-raspberry-pi/overview
+* and make sure to install the python wrappers so that the example neopixel.py command works
 
 To add code to the repo:
 * `git push` then enter username and password
