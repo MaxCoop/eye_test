@@ -1,10 +1,7 @@
-# Pupil measurement device
-
-![System](simplesystemoverview.png | width=250)
+# Pupil measurement device 
+## System overview 
+![System](simplesystemoverview.png)
 Format: ![Alt Text](url)
-
-<img src="https://github.com/kaiwhata/eye_test/blob/master/fullsystempicture.png" width="150">
-
 
 # System description
 
@@ -47,7 +44,6 @@ Intensity measurement for blue light = 200-400 mCD (milliCandela) according to t
 System uses Raspberry PI 2 B. Pinout used here -> http://pi4j.com/images/j8header-2b-large.png
 
 
-
 ### To Do
  - fix security an permissions (sudo) issues
  - improve javascript app load time by caching
@@ -55,5 +51,11 @@ System uses Raspberry PI 2 B. Pinout used here -> http://pi4j.com/images/j8heade
  - implement spiral edge detection alcorithing for `CCodeVid6.cpp`
  - fix bug where preview button locks camera process
  - the 'measure' button needs 'close preview' functionality added to it so that it frees the camera for CCodeVid analysis
+ 
+## Images of current setup
+<img src="https://github.com/kaiwhata/eye_test/blob/master/fullsystemoverview.png" width="250">
+<img src="https://github.com/kaiwhata/eye_test/blob/master/exploded.png" width="250">
+<img src="https://github.com/kaiwhata/eye_test/blob/master/electronics.png" width="250">
+<img src="https://github.com/kaiwhata/eye_test/blob/master/fullsystempicture.png" width="250">
  
 Credit to Dr. Jesse Gale for original concept and implementation idea. To Kapetini Polutea for the image processing code and algorithims. To Shaetrun Pathmanathan for the electronics and hardware redesign and for the web interface and javascript.
