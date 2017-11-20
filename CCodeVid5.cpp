@@ -25,7 +25,7 @@ Mat Image;
 double RedTime = 0;
 double ThreshTime = 0;
 
-//nCount should be replaced by argument value
+//TODO - nCount should be replaced by argument value
 int nCount =340;
 
 //Frame information
@@ -40,6 +40,8 @@ int THoldRate = 5;
 
 //Output Files/Directories
 //Note this MUST be subdirectory strucutre where executable is run from
+//TO DO - restrucutre this so code checks for and creates directories if they dont exist
+//and makes new ones based on datetime of recording
 ofstream RawData ("Data/SecondHalf_Tests/20_1_2017_Vid4/Run4/"+to_string(nCount)+"Frames_"+to_string(MBlurRate)+"MedianBlur_"+to_string(THoldRate)+"Threshold.txt");
 ofstream BlackPixels ("Data/SecondHalf_Tests/20_1_2017_Vid4/Run4/BlackPixels.txt");
 
