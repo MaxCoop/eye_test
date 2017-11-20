@@ -10,6 +10,8 @@ We use neopixel rings to illuminate the eye with visible light and them image pr
 
 # Software process
 
+<img src="https://github.com/kaiwhata/eye_test/blob/master/fullsystemoverview.png" width="500">
+
 ## Supervisor
 We use supervisor-ctl to launch the flask webserverapp at boot.
 Scripts are called automatically from the `supervisord.conf` file and running the `supervisorctl status all` command will show what scripts/p[rograms are currently known by and teh status of them under supervior.
@@ -31,6 +33,10 @@ The process sequence is performed using OpenCV methods:
 System designs and code for a cheap pupil measurement device that is capable of fabrication and use by non-technical people.
 Current system design uses a 3D printed google (the OpenSCAD files), and a 16 neopixel ring for colour specific illumination, two wide angle IR LEDs controlled using a transistor and a 15 Ohm resistor.  IR LED is driven by GPIO pin 4, Neopixels are driven from GPIO 18. The google also contains the lens from a Google cardboard and photographic negative film to block visible light to the NoIR camera used for image capture.
 
+<img src="https://github.com/kaiwhata/eye_test/blob/master/exploded.png" width="500">
+<img src="https://github.com/kaiwhata/eye_test/blob/master/electronics.png" width="500">
+<img src="https://github.com/kaiwhata/eye_test/blob/master/fullsystempicture.png" width="500">
+
 Neopixels used in this project have the datasheet from here - https://cdn-shop.adafruit.com/datasheets/WS2812.pdf
 
 Intensity measurement for blue light = 200-400 mCD (milliCandela) according to the Neopixel datasheet
@@ -51,11 +57,5 @@ System uses Raspberry PI 2 B. Pinout used here -> http://pi4j.com/images/j8heade
  - implement spiral edge detection alcorithing for `CCodeVid6.cpp`
  - fix bug where preview button locks camera process
  - the 'measure' button needs 'close preview' functionality added to it so that it frees the camera for CCodeVid analysis
- 
-## Images of current setup
-<img src="https://github.com/kaiwhata/eye_test/blob/master/fullsystemoverview.png" width="500">
-<img src="https://github.com/kaiwhata/eye_test/blob/master/exploded.png" width="500">
-<img src="https://github.com/kaiwhata/eye_test/blob/master/electronics.png" width="500">
-<img src="https://github.com/kaiwhata/eye_test/blob/master/fullsystempicture.png" width="500">
- 
+  
 Credit to Dr. Jesse Gale for original concept and implementation idea. To Kapetini Polutea for the image processing code and algorithims. To Shaetrun Pathmanathan for the electronics and hardware redesign and for the web interface and javascript.
