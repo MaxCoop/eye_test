@@ -1,3 +1,6 @@
+//compile command
+//g++ CCodeVid2.cpp -o CCodeVid2 -lopencv_core -lopencv_highgui -lopencv_imgproc -lraspicam -lraspicam_cv -std=c++11
+
 #include <string>
 #include <stdlib.h>
 #include <iostream>
@@ -31,14 +34,15 @@ double ThreshTime = 0;
 int MBlurRate = 5;
 int THoldRate = 10;
 
+//main program begins
 int main(int argc, char** argv){
-
-
+    //initialize timing parameters
     clock_t Time;
     Time = clock();
-
+    
+    //camera object using opencv
     raspicam::RaspiCam_Cv Camera; //Camera Object
-    //Open Camera
+    //Open Camera at certain resolutions
     Camera.set(CV_CAP_PROP_FRAME_WIDTH,640);
     Camera.set(CV_CAP_PROP_FRAME_HEIGHT, 480);
     
@@ -47,7 +51,8 @@ int main(int argc, char** argv){
     
     //Camera.set(CV_CAP_PROP_FRAME_WIDTH,1920);
     //Camera.set(CV_CAP_PROP_FRAME_HEIGHT, 1080);
- 
+    
+    //error handling
     if(!Camera.open()){
 	cout<<"Error opening the camera"<<endl;
 	return -1;
@@ -61,9 +66,8 @@ int main(int argc, char** argv){
     
     //back to Kaps' original code
     
-    
+    //capture 300 (nCount) frames
     int nCount = 300;
-
 	
     //Capturing Frame
     namedWindow("DISPLAY",WINDOW_NORMAL);
@@ -72,6 +76,7 @@ int main(int argc, char** argv){
     int x;
     int j;
     
+    // location of results datafile
     ofstream RawData ("Data/Test_Tue_14Dec/Median"+to_string(MBlurRate)+"_Thresh"+to_string(THoldRate)+"BlackPixels.txt");
     ofstream BlackPixels ("BlackPixels.txt");
 
@@ -81,21 +86,22 @@ int main(int argc, char** argv){
 	Camera.retrieve (Image);
 	
 	if(i >= 5){
+	    //only red channel
 	    getRedColor(Image);
-
+            //noramlises image to pixel value range
 	    getEqualize(Image);
-	    
+	    //median blur by pixel (takes ages)
 	    getBlur(Image);
-
+            //selects only pixels below a certain threshold
 	    getThresh(Image);
-	  
+	    //counts number of black pixels
 	    for (x = 0; x<Image.cols;x++){
 		for(j = 0;j<Image.rows;j++){
 		    int k=Image.at<uchar>(j,x);
 		    if(k == 0){ count++ ;}    
       		}
 	    } 
-
+        //writes data to file
         if (RawData.is_open()){
 		RawData<<"Frame "<<i<<endl;
 		//RawData<<"MedianBlur OFF : NOBP = "<<count2<<endl;
@@ -114,11 +120,12 @@ int main(int argc, char** argv){
 	    count = 0;
     
 	}
-	
+	//opencv displays image to screen (also very slow)
 		imshow("DISPLAY",Image);
 	    waitKey(1);
 	
     }
+    //calculates total runtime of program
     double Total = (clock() - Time)/(double)CLOCKS_PER_SEC;
     cout<<"Total Process Time "<<setprecision(3)<<(Total)<<endl;
 
@@ -136,6 +143,8 @@ int main(int argc, char** argv){
     //double Subtotal = RedTime+EqualTime+BlurTime+ThreshTime;
     //cout<<"Total Process Time "<<setprecision(3)<<(Subtotal)<<endl;
     //cout<<"Stop Camera..."<<endl;
+	
+    //calculates and displays a histogrm pf pixel intensities with gnuplot
     getHist();   
     return 0;
 }
