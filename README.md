@@ -53,9 +53,9 @@ System uses Raspberry PI 2 B. Pinout used here -> http://pi4j.com/images/j8heade
  - the 'measure' button needs 'close preview' functionality added to it so that it frees the camera for CCodeVid analysis
  
 ## Images of current setup
-<img src="https://github.com/kaiwhata/eye_test/blob/master/fullsystemoverview.png" width="250">
-<img src="https://github.com/kaiwhata/eye_test/blob/master/exploded.png" width="250">
-<img src="https://github.com/kaiwhata/eye_test/blob/master/electronics.png" width="250">
-<img src="https://github.com/kaiwhata/eye_test/blob/master/fullsystempicture.png" width="250">
+<img src="https://github.com/kaiwhata/eye_test/blob/master/fullsystemoverview.png" width="500">
+<img src="https://github.com/kaiwhata/eye_test/blob/master/exploded.png" width="500">
+<img src="https://github.com/kaiwhata/eye_test/blob/master/electronics.png" width="500">
+<img src="https://github.com/kaiwhata/eye_test/blob/master/fullsystempicture.png" width="500">
  
 Credit to Dr. Jesse Gale for original concept and implementation idea. To Kapetini Polutea for the image processing code and algorithims. To Shaetrun Pathmanathan for the electronics and hardware redesign and for the web interface and javascript.
