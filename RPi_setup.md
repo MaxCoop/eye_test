@@ -1,4 +1,4 @@
-#Instructions for setting up the background RPi
+# Instructions for setting up the background RPi
 
 * Start with fresh raspian install (we're using 2015-09-24-raspian-jessie.img)
 * `sudo raspi-config` + resize SD card partition and enable camera and ssh 
@@ -6,8 +6,16 @@
 * `sudo apt-get upgrade`
 * `sudo apt-get install git-core git`
 * `sudo apt-get install libopencv-dev`
+* `sudo apt-get upgrade
 
-Then load code from Arthur's ENGR101 library in the folder ENGR101library folder
+Then install supervisor
+ * `pip install supervisor`
+ * Then create `/etc/supervisord.conf` and populate appropriately
+
+Then install flask
+ * `pip install flask`
+
+Then clone code from repo
 * `git clone https://github.com/kaiwhata/eye_test`
 * `git status`
 
@@ -20,5 +28,10 @@ To pull new code from the repo:
 To use the camera from C programs the `camera.h` file must be in the same directory as the script runs from.
 * `#include "camera.h"` this is the camera import line.
 
-##Python Libraries
-* `sudo apt-get install python-opencv python-scipy python-numpy ipython python-setuptools python-matplotlib`
+Once you're ready to have the pi as it's own wifi hotspo follow the setup instructions here.
+ * https://learn.adafruit.com/setting-up-a-raspberry-pi-as-a-wifi-access-point/overview
+ * ONLY DO THIS ONCE YOU ALREADY HAVE EVERYTHING YOU NEED FROM THE INTERNET IF YOU ARE NOT USING AN ETHERNET CONNECTION
+ (not that it's hard to undo - it's just a pain to constantly reconfigure your `/etc/network/interfaces` files
+ 
+## Additional Python Libraries (optional for development)
+* `sudo apt-get install python-opencv python-scipy python-numpy ipython python-setuptools python-matplotlib python-picamera`
