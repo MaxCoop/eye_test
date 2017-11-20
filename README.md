@@ -1,5 +1,11 @@
 # Pupil measurement device
 
+![System](simplesystemoverview.png)
+
+
+![GitHub Logo](https://github.com/kaiwhata/eye_test/blob/master/simplesystemoverview.png)
+Format: ![Alt Text](url)
+
 # System description
 
 Our system uses a RPi 2 B+ as a base along with a NoIR camera to recieve images of teh pupil illuminated under IR light.
