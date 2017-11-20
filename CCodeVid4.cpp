@@ -1,3 +1,6 @@
+//compile command
+//g++ CCodeVid4.cpp -o CCodeVid4 -lopencv_core -lopencv_highgui -lopencv_imgproc -lraspicam -lraspicam_cv -std=c++11
+
 #include <string>
 #include <stdlib.h>
 #include <iostream>
@@ -31,7 +34,6 @@ double ThreshTime = 0;
 int nCount =340;
 int TestNo = 1; 
 
-
 //Frame information
 int Fx = -1;
 int Fy = -1;
@@ -43,8 +45,8 @@ int BPixels = 0;
 int MBlurRate = 5;
 int THoldRate = 50;
 
-//Folders
-
+//Output Files/Directories
+//Note this MUST be subdirectory strucutre where executable is run from
 ofstream RawData ("Data/SecondHalf_Tests/20_1_2017_Vid4/Run4/"+to_string(nCount)+"Frames_"+to_string(MBlurRate)+"MedianBlur_"+to_string(THoldRate)+"Threshold.txt");
 ofstream BlackPixels ("Data/SecondHalf_Tests/20_1_2017_Vid4/Run4/BlackPixels.txt");
 
@@ -53,9 +55,6 @@ std::ofstream ColData ("Data/SecondHalf_Tests/20_1_2017_Vid4/Run4/ColCount.txt")
 std::ofstream EndsData ("Data/SecondHalf_Tests/20_1_2017_Vid4/Run4/ColEnds.txt"); 
 
 //Capturing Frame
-
-  
-
 int main(int argc, char** argv){
 
     clock_t Time;
@@ -80,10 +79,12 @@ int main(int argc, char** argv){
 	Camera.grab(); 
 	Camera.retrieve (Image);
 	Image2 = Image.clone();
+	//only take red channel
 	getRedColor(Image);    
 
+	//dynamically calculates theshold after first 40 frames to allow camer time to stabilize
 	  if (i == 40){    
-	  // Initialize parameters
+	  // calculates histogram of pixel intensities at frame 40
 		int histSize = 256;    // bin size
 		float range[] = { 0, 255 };
 		const float *ranges[] = { range };
@@ -95,26 +96,29 @@ int main(int argc, char** argv){
 		total = Image.rows * Image.cols;
 		float binTotal = 0;
 		for( int h = 0; h < histSize; h++){    
-		float binVal = hist.at<float>(h);
-		binTotal = binTotal + binVal;
+			float binVal = hist.at<float>(h);
+			binTotal = binTotal + binVal;
 	  //			cout<<h<<" "<<binVal<<'\n';
-		if(binTotal < (6000)){THoldRate = h;}				
-		
+		//magic number '6000' is we assume the 6000 darkest pixels are part of the pupil and nothing else is
+		//that pixels are used to calculate the threshold value of intensity
+			if(binTotal < (6000)){THoldRate = h;}				
 		}
 	  }
 	
 	if(i >= 40){
 	//Functions
 	//Mat Temp = Image.clone();
-	//getEqualize(Image);
-	//getBlur(Image);
+	//getEqualize(Image); - reduced fidelity
+	//getBlur(Image); - too costly
 	getThresh(Image);
 	getCenter(Image,i);
+	//surely we should run the blackpixels method first??	
 	cout<<BPixels<<endl;
 	}    
    
 	          
 	 if(i >= 40){
+		//writes data analysis to file
 		if (RawData.is_open()){
 			RawData<<"Frame "<<i<<endl;
 			RawData<<"ThresholdValue "<<THoldRate<<endl;
@@ -139,6 +143,7 @@ int main(int argc, char** argv){
     BlackPixels.close();
     RawData.close();
     Camera.release();
+    //we can comment this final histogram out
     getHist();   
 
     return 0;
@@ -210,12 +215,13 @@ void getCenter(Mat Frame,int fnum){
     int n;
     int m;
     int count=0; 
-	
+    //counts number of black pixels	
     for (i = 0; i<Frame.cols;i++){
 	for(j = 0;j<Frame.rows;j++){
 	    int k= Frame.at<uchar>(j,i);
 	    if(k==0){ count++;}      
 	}
+	//no idea what this does - estimates centre of pupil by histogramming    
 	if (ColData.is_open()){
 		ColData<<i<<" "<<count<<endl;
 	    int temp = abs(count-30); 
@@ -226,14 +232,18 @@ void getCenter(Mat Frame,int fnum){
 			}else{ Col2 = i; CEnd2 = count;}
 	    }
 	}
+	// no idea ends
 	count=0;
     } 
-
+    
+    //pupil width
     int FWid = Col2-Col1;
+    //pupil x location
     int Fx = Col1 + (FWid/2);
     std::cout<<"Width "<<FWid<<'\n';
     std::cout<<"X "<<(Fx)<<'\n';
 
+    //same as above but for heigh of pupil and upil y location
     for (n = 0; n<Frame.rows;n++){
 	for(m = 0;m<Frame.cols;m++){
 	    int k=Frame.at<uchar>(n,m);
@@ -262,9 +272,10 @@ void getCenter(Mat Frame,int fnum){
     std::cout<<"Length "<<FLen<<'\n';
     std::cout<<"Y "<<(Fy)<<'\n';
 
+    //draws circle to output image	
     //circle(Image2,Point(Fx,Fy), 3, Scalar(0,255,0),2,0);
     //circle(Image2,Point(Fx,Fy),(FWid/2), cv::Scalar(0,0,255),2,0);
-	//imwrite("Data/SecondHalf_Tests/17_1_2017_Vid4/Run1/CFrames/Image"+to_string(fnum)+".png",Image2);
+    //imwrite("Data/SecondHalf_Tests/17_1_2017_Vid4/Run1/CFrames/Image"+to_string(fnum)+".png",Image2);
     //imwrite("Data/SecondHalf_Tests/17_1_2017_Vid4/Run1/NFrames/Image"+to_string(fnum)+".png",Frame);
     //imshow("DISPLAY", Frame);
     waitKey(1);
