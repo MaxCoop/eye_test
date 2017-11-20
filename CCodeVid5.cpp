@@ -1,5 +1,5 @@
 //compile command
-//g++ CCodeVid4.cpp -o CCodeVid4 -lopencv_core -lopencv_highgui -lopencv_imgproc -lraspicam -lraspicam_cv -std=c++11
+//g++ CCodeVid5.cpp -o CCodeVid5 -lopencv_core -lopencv_highgui -lopencv_imgproc -lraspicam -lraspicam_cv -std=c++11
 
 #include <string>
 #include <stdlib.h>
@@ -59,14 +59,14 @@ int main(int argc, char** argv){
 
     clock_t Time;
     Time = clock();
-
+    //open camera and set resolution
     int w = 640;
     int h =480;
     raspicam::RaspiCam_Cv Camera; //Camera Object
     //Open Camera
     Camera.set(CV_CAP_PROP_FRAME_WIDTH,w);
     Camera.set(CV_CAP_PROP_FRAME_HEIGHT, h);
-
+    //error handling
     if(!Camera.open()){
 	cout<<"Error opening the camera"<<endl;
 	return -1;
@@ -74,11 +74,12 @@ int main(int argc, char** argv){
  
     int x;
     int j;
+    //iterate through frames
     for(int i = 0; i<=nCount; i++){		  
 
 	Camera.grab(); 
 	Camera.retrieve (Image);
-	Image2 = Image.clone();
+
 	//only take red channel
 	getRedColor(Image);    
 
@@ -95,29 +96,32 @@ int main(int argc, char** argv){
 		double total;
 		total = Image.rows * Image.cols;
 		float binTotal = 0;
+		//counts through all bins in histogram
 		for( int h = 0; h < histSize; h++){    
 			float binVal = hist.at<float>(h);
 			binTotal = binTotal + binVal;
-	  //			cout<<h<<" "<<binVal<<'\n';
-		//magic number '6000' is we assume the 6000 darkest pixels are part of the pupil and nothing else is
-		//that pixels are used to calculate the threshold value of intensity
-			if(binTotal < (6000)){THoldRate = h;}				
+		        //magic number '6000' is we assume the 6000 darkest pixels are part of the pupil and nothing else is
+		        //that pixels are used to calculate the threshold value of intensity
+			if(binTotal < (6000)){
+				THoldRate = h;
+				cout<<h<<" "<<binVal<<"\n";
+				}
+			//once we have counts the 6000th darkest pixel we set that as threshold
 		}
 	  }
 	
 	if(i >= 40){
-	//Functions
-	//Mat Temp = Image.clone();
-	//getEqualize(Image); - reduced fidelity
-	//getBlur(Image); - too costly
-	getThresh(Image);
-	getCenter(Image,i);
-	//surely we should run the blackpixels method first??	
-	cout<<BPixels<<endl;
-	}    
-   
-	          
-	 if(i >= 40){
+		//Functions
+		//step 1 threshold image based on dynamic calculation
+		getThresh(Image);
+		//step 2 esimtates centre, heigh and width of pupil an calculates number of black pixels
+		getCenter(Image,i);
+			
+		//TO DO implement 2017 spiral function here
+			
+		//output calculated variables
+		cout<<BPixels<<endl;
+
 		//writes data analysis to file
 		if (RawData.is_open()){
 			RawData<<"Frame "<<i<<endl;
@@ -143,9 +147,6 @@ int main(int argc, char** argv){
     BlackPixels.close();
     RawData.close();
     Camera.release();
-    //we can comment this final histogram out
-    getHist();   
-
     return 0;
 }
 
@@ -155,46 +156,10 @@ void getRedColor(Mat Frame){
     Image = BRG[2];
 }
 
-void getEqualize (Mat Frame){
-    equalizeHist(Frame,Image);
-}
-
-void getBlur (Mat Frame){
-    medianBlur(Frame,Image,MBlurRate);
-}
-
 void getThresh (Mat Frame){
     threshold(Frame,Image,THoldRate,255, THRESH_BINARY);
 }
 
-int getBlackPixels (Mat Frame){
-    int count = 0;
-    for (int x = 0; x<Frame.cols;x++){
-	for(int j = 0;j<Frame.rows;j++){
-	    int k=Frame.at<uchar>(j,x);
-	    if(k == 0){ count++ ;}    
-	}
-    } 
-    return count;
-}
-
-
-void getHist(){	
-    FILE *gnuplotPipe = popen ("gnuplot -persistent", "w");
-    FILE *gnuplotPipf = popen ("gnuplot -persistent", "w");
-    if(gnuplotPipe){	
-	//fprintf(gnuplotPipe, "plot 'BlackPixels.txt' using 1:2 with lines, 'BlackPixels.txt' using 1:3 with lines \n");
-	fprintf(gnuplotPipe, "plot 'Data/SecondHalf_Tests/20_1_2017_Vid4/Run4/ColCount.txt' using 1:2 with lines,'Data/SecondHalf_Tests/20_1_2017_Vid4/Run4/RowCount.txt' using 1:2 with lines,'Data/SecondHalf_Tests/20_1_2017_Vid4/Run4/ColEnds.txt' using 1:2 with points \n");
-	fflush(gnuplotPipe);
-    }
-    
-    if(gnuplotPipf){
-		fprintf(gnuplotPipf, "plot 'Data/SecondHalf_Tests/20_1_2017_Vid4/Run4/BlackPixels.txt' using 1:2 with lines \n");
-		fflush(gnuplotPipf);		
-		}
-    
-    printf("Displaying graphs \n");		
-}
 
 void getCenter(Mat Frame,int fnum){
     int CEnd1 = -1;
@@ -207,7 +172,7 @@ void getCenter(Mat Frame,int fnum){
     int Row1 = -1;
     int Row2 = -1;
 
-    //Variables for counting black pixels
+    //Variable for counting black pixels
     BPixels = 0;
    // namedWindow("DISPLAY",WINDOW_NORMAL);
     int i;
@@ -215,25 +180,28 @@ void getCenter(Mat Frame,int fnum){
     int n;
     int m;
     int count=0; 
-    //counts number of black pixels	
+
+   //TO DO - code below cycles through image twice when it only needs to once
+   //we should refactor this to reduce O
+	
     for (i = 0; i<Frame.cols;i++){
 	for(j = 0;j<Frame.rows;j++){
 	    int k= Frame.at<uchar>(j,i);
+	    //'count' variable is number of black pixels in column
 	    if(k==0){ count++;}      
 	}
-	//no idea what this does - estimates centre of pupil by histogramming    
+	//estimates centre of pupil by histogramming    
 	if (ColData.is_open()){
 		ColData<<i<<" "<<count<<endl;
-	    int temp = abs(count-30); 
-	    if(temp >= 0 && temp <= 20){
+	        int temp = abs(count-30); 
+	        if(temp >= 0 && temp <= 20){
 			if(Col1 == -1){
-		    Col1 = i;
-		    CEnd1 = count;
+		           Col1 = i;
+		           CEnd1 = count; 
 			}else{ Col2 = i; CEnd2 = count;}
-	    }
+	        }
 	}
-	// no idea ends
-	count=0;
+    count=0;
     } 
     
     //pupil width
@@ -247,10 +215,11 @@ void getCenter(Mat Frame,int fnum){
     for (n = 0; n<Frame.rows;n++){
 	for(m = 0;m<Frame.cols;m++){
 	    int k=Frame.at<uchar>(n,m);
+	    //counts number of black pixels that is output	
 	    if(k==0){ count++; BPixels++;}      
-	}
+	    }
 	if (RowData.is_open()){
-		RowData<<n<<" "<<count<<endl;
+	    RowData<<n<<" "<<count<<endl;
 	    int temp2 = abs(count-30); 
 	    if(temp2 >= 0 && temp2 <= 20){
 		if(Row1 == -1){
@@ -258,26 +227,22 @@ void getCenter(Mat Frame,int fnum){
 		    REnd1 = count;
 		}else{ Row2 = n; REnd2 = count;}
 	    }
-	}
-			
-	count=0;
+	}		
+    count=0;
     } 
-		EndsData<<Col1<<" "<<CEnd1<<endl;
-		EndsData<<Col2<<" "<<CEnd2<<endl;
-		EndsData<<Row1<<" "<<REnd1<<endl;
-		EndsData<<Row2<<" "<<REnd2<<endl;
-	
+    //outputs to 'EndsData' file - not sure why	
+    EndsData<<Col1<<" "<<CEnd1<<endl;
+    EndsData<<Col2<<" "<<CEnd2<<endl;
+    EndsData<<Row1<<" "<<REnd1<<endl;
+    EndsData<<Row2<<" "<<REnd2<<endl;
+
+    //pupil height
     int FLen = Row2-Row1;
+    //pupil y position
     int Fy = Row1 + (FLen/2);
     std::cout<<"Length "<<FLen<<'\n';
     std::cout<<"Y "<<(Fy)<<'\n';
 
-    //draws circle to output image	
-    //circle(Image2,Point(Fx,Fy), 3, Scalar(0,255,0),2,0);
-    //circle(Image2,Point(Fx,Fy),(FWid/2), cv::Scalar(0,0,255),2,0);
-    //imwrite("Data/SecondHalf_Tests/17_1_2017_Vid4/Run1/CFrames/Image"+to_string(fnum)+".png",Image2);
-    //imwrite("Data/SecondHalf_Tests/17_1_2017_Vid4/Run1/NFrames/Image"+to_string(fnum)+".png",Frame);
-    //imshow("DISPLAY", Frame);
     waitKey(1);
 
 }
