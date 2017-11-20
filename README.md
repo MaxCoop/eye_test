@@ -47,6 +47,7 @@ System uses Raspberry PI 2 B. Pinout used here -> http://pi4j.com/images/j8heade
  - improve javascript app load time by caching
  - upgrades to binocularity via multiplexer and multiple neopixel rings
  - implement spiral edge detection alcorithing for `CCodeVid6.cpp`
- - fix bug where prevew button locks camera process
+ - fix bug where preview button locks camera process
+ - the 'measure' button needs 'close preview' functionality added to it so that it frees the camera for CCodeVid analysis
  
 Credit to Dr. Jesse Gale for original concept and implementation idea. To Kapetini Polutea for the image processing code and algorithims. To Shaetrun Pathmanathan for the electronics and hardware redesign and for the web interface and javascript.
