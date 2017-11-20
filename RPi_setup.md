@@ -19,6 +19,9 @@ Then clone code from repo
 * `git clone https://github.com/kaiwhata/eye_test`
 * `git status`
 
+You will also need to get teh neopixel control library downloaded and working by following instructions here:
+* https://learn.adafruit.com/neopixels-on-raspberry-pi/overview
+
 To add code to the repo:
 * `git push` then enter username and password
 
