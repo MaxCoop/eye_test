@@ -1,10 +1,10 @@
 # Pupil measurement device
 
-![System](simplesystemoverview.png)
-
-
-![GitHub Logo](https://github.com/kaiwhata/eye_test/blob/master/simplesystemoverview.png)
+![System](simplesystemoverview.png | width=250)
 Format: ![Alt Text](url)
+
+<img src="https://github.com/kaiwhata/eye_test/blob/master/fullsystempicture.png" width="150">
+
 
 # System description
 
