@@ -19,20 +19,14 @@ using namespace cv;
 using namespace std;
 
 void getRedColor (Mat frame);
-void getEqualize (Mat frame);
-void getBlur     (Mat frame);
 void getThresh	 (Mat frame);
-int getBlackPixels(Mat frame);
 void getCenter (Mat frame, int fnum);
-void getHist ();
 Mat Image;
-Mat Image2;
 double RedTime = 0;
-double EqualTime = 0;
-double BlurTime = 0;
 double ThreshTime = 0;
+
+//nCount should be replaced by argument value
 int nCount =340;
-int TestNo = 1; 
 
 //Frame information
 int Fx = -1;
@@ -41,9 +35,8 @@ int FLen = -1;
 int FWid = -1;
 int BPixels = 0;
 
-//Rates for MedianBlur & Threshold
-int MBlurRate = 5;
-int THoldRate = 50;
+//Minimum rates for Threshold
+int THoldRate = 5;
 
 //Output Files/Directories
 //Note this MUST be subdirectory strucutre where executable is run from
@@ -55,8 +48,17 @@ std::ofstream ColData ("Data/SecondHalf_Tests/20_1_2017_Vid4/Run4/ColCount.txt")
 std::ofstream EndsData ("Data/SecondHalf_Tests/20_1_2017_Vid4/Run4/ColEnds.txt"); 
 
 //Capturing Frame
+//TO DO need to update method to take argument for total number of frames
 int main(int argc, char** argv){
 
+    //check number of arguments given	
+    cout << argc << "arguments Entered" << "\n"
+    //print all arguments	    
+    for (int p=0; p < argc; ++p)
+	    cout << argv[p] << "\n"
+    //./CCodeVid5 350 - use argv[1] for frame input 
+    nCount = std::stoi(argv[1]); //converts to integer 	    
+	    
     clock_t Time;
     Time = clock();
     //open camera and set resolution
