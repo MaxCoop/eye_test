@@ -12,6 +12,8 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <raspicam/raspicam_cv.h>
 #include <iomanip>
+#include <sys/stat.h>
+#include <cstdlib>
 
 
 //Prevents naming collisions
@@ -21,6 +23,7 @@ using namespace std;
 void getRedColor (Mat frame);
 void getThresh	 (Mat frame);
 void getCenter (Mat frame, int fnum);
+string getTime();
 Mat Image;
 double RedTime = 0;
 double ThreshTime = 0;
@@ -35,6 +38,7 @@ int FLen = -1;
 int FWid = -1;
 int BPixels = 0;
 
+
 //Minimum rates for Threshold
 int THoldRate = 5;
 
@@ -42,27 +46,37 @@ int THoldRate = 5;
 //Note this MUST be subdirectory strucutre where executable is run from
 //TO DO - restrucutre this so code checks for and creates directories if they dont exist
 //and makes new ones based on datetime of recording
-ofstream RawData ("Data/SecondHalf_Tests/20_1_2017_Vid4/Run4/"+to_string(nCount)+"Frames_"+to_string(MBlurRate)+"MedianBlur_"+to_string(THoldRate)+"Threshold.txt");
-ofstream BlackPixels ("Data/SecondHalf_Tests/20_1_2017_Vid4/Run4/BlackPixels.txt");
 
-std::ofstream RowData ("Data/SecondHalf_Tests/20_1_2017_Vid4/Run4/RowCount.txt");
-std::ofstream ColData ("Data/SecondHalf_Tests/20_1_2017_Vid4/Run4/ColCount.txt");  
-std::ofstream EndsData ("Data/SecondHalf_Tests/20_1_2017_Vid4/Run4/ColEnds.txt"); 
+const int dir_err = system("mkdir -p Data3/SecondHalf_Tests/Vid/Run");
 
+string name = ("Data3/SecondHalf_Tests/Vid/Run/"+getTime()+to_string(nCount)+"Frames_"+to_string(THoldRate)+"Threshold.txt");
+
+ofstream RawData (name);
+ofstream BlackPixels ("Data3/SecondHalf_Tests/Vid/Run/BlackPixels.txt");
+
+std::ofstream RowData ("Data3/SecondHalf_Tests/Vid/Run/RowCount.txt");
+std::ofstream ColData ("Data3/SecondHalf_Tests/Vid/Run/ColCount.txt");  
+std::ofstream EndsData ("Data3/SecondHalf_Tests/Vid/Run/ColEnds.txt"); 
 //Capturing Frame
 //TO DO need to update method to take argument for total number of frames
 int main(int argc, char** argv){
+    RawData<<"Frames,ThresholdValue,BlackPixels,PupilCenterX,PupilCenterY,PupilWid,PupilLen,Time"<<endl;
+    clock_t Time;
+    Time = clock();
+    //cout << Time;
+    //waitKey(1);
+    //cout << clock();
 
     //check number of arguments given	
-    cout << argc << "arguments Entered" << "\n"
+    //cout << argc << "arguments Entered" << "\n";
     //print all arguments	    
-    for (int p=0; p < argc; ++p)
-	    cout << argv[p] << "\n"
+    //for (int p=0; p < argc; ++p){
+	    //cout << argv[p] << "\n";
+//	}
     //./CCodeVid5 350 - use argv[1] for frame input 
     nCount = std::stoi(argv[1]); //converts to integer 	    
 	    
-    clock_t Time;
-    Time = clock();
+    
     //open camera and set resolution
     int w = 640;
     int h =480;
@@ -76,8 +90,6 @@ int main(int argc, char** argv){
 	return -1;
     }	
  
-    int x;
-    int j;
     //iterate through frames
     for(int i = 0; i<=nCount; i++){		  
 
@@ -97,8 +109,9 @@ int main(int argc, char** argv){
    
 		calcHist( &Image, 1, 0, Mat(), hist, 1, &histSize, ranges, true, false );
 		
-		double total;
-		total = Image.rows * Image.cols;
+		//double total;
+		//total = Image.rows * Image.cols;
+		
 		float binTotal = 0;
 		//counts through all bins in histogram
 		for( int h = 0; h < histSize; h++){    
@@ -108,7 +121,7 @@ int main(int argc, char** argv){
 		        //that pixels are used to calculate the threshold value of intensity
 			if(binTotal < (6000)){
 				THoldRate = h;
-				cout<<h<<" "<<binVal<<"\n";
+				//cout<<h<<" "<<binVal<<"\n";
 				}
 			//once we have counts the 6000th darkest pixel we set that as threshold
 		}
@@ -124,35 +137,45 @@ int main(int argc, char** argv){
 		//TO DO implement 2017 spiral function here
 			
 		//output calculated variables
-		cout<<BPixels<<endl;
+		//cout<<BPixels<<endl;
 
 		//writes data analysis to file
 		if (RawData.is_open()){
-			RawData<<"Frame "<<i<<endl;
-			RawData<<"ThresholdValue "<<THoldRate<<endl;
-			RawData<<"Black Pixels = "<<BPixels<<endl;
-			RawData<<"PupilCenterX = "<<Fx<<endl;
-			RawData<<"PupilCenterY = "<<Fy<<endl;
-			RawData<<"PupilWid = "<<FWid<<endl;
-			RawData<<"PupilLen = "<<FLen<<endl;
+			RawData<<i<<",";
+			RawData<<THoldRate<<",";
+			RawData<<BPixels<<",";
+			RawData<<Fx<<",";
+			RawData<<Fy<<",";
+			RawData<<FWid<<",";
+			RawData<<FLen<<",";
 			double ProcessTime= (clock()-Time);
-			RawData<<"Time :"<<ProcessTime<<endl;
+			RawData<<ProcessTime<<endl;
 			if(BlackPixels.is_open()){
-				BlackPixels<<ProcessTime<<" "<<BPixels<<endl;
-			}
-			RawData<<'\n';	
+				BlackPixels<<ProcessTime<<" "<<BPixels;
+			}	
 		}   
 	}
   
     }
 
-    double Total = (clock() - Time)/(double)CLOCKS_PER_SEC;
-    cout<<"Total Process Time "<<setprecision(3)<<(Total)<<endl;
+    //double Total = (clock() - Time)/(double)CLOCKS_PER_SEC;
+    //cout<<"Total Process Time "<<setprecision(3)<<(Total)<<endl;
     BlackPixels.close();
     RawData.close();
     Camera.release();
+    std::cout<< name <<endl;
     return 0;
 }
+
+string getTime(){
+	time_t currentTime;
+	struct tm nowLocal;
+	currentTime = time(NULL); //gets the time from the os 
+	nowLocal=*localtime(&currentTime);
+	int datetime = nowLocal.tm_mday+(nowLocal.tm_mon+1)+(nowLocal.tm_year+1900)+nowLocal.tm_hour+nowLocal.tm_min+nowLocal.tm_sec;
+	return to_string(datetime);
+}
+
 
 void getRedColor(Mat Frame){
     Mat BRG[3];
@@ -212,8 +235,8 @@ void getCenter(Mat Frame,int fnum){
     int FWid = Col2-Col1;
     //pupil x location
     int Fx = Col1 + (FWid/2);
-    std::cout<<"Width "<<FWid<<'\n';
-    std::cout<<"X "<<(Fx)<<'\n';
+    //std::cout<<"Width "<<FWid<<'\n';
+    //std::cout<<"X "<<(Fx)<<'\n';
 
     //same as above but for heigh of pupil and upil y location
     for (n = 0; n<Frame.rows;n++){
@@ -244,9 +267,8 @@ void getCenter(Mat Frame,int fnum){
     int FLen = Row2-Row1;
     //pupil y position
     int Fy = Row1 + (FLen/2);
-    std::cout<<"Length "<<FLen<<'\n';
-    std::cout<<"Y "<<(Fy)<<'\n';
+    //std::cout<<"Length "<<FLen<<'\n';
+    //std::cout<<"Y "<<(Fy)<<'\n';
 
     waitKey(1);
-
 }
