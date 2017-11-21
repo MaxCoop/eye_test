@@ -1,3 +1,6 @@
+//compile command
+//g++ LiveCameraFeed.cpp -o LiveCameraFeed -lopencv_core -lopencv_highgui -lopencv_imgproc -lraspicam -lraspicam_cv -std=c++11
+
 #include <string>
 #include <stdlib.h>
 #include <iostream>
@@ -9,8 +12,6 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <raspicam/raspicam_cv.h>
 #include <iomanip>
-
-
 
 //Prevents naming collisions
 using namespace cv;
@@ -64,17 +65,13 @@ int main(int argc, char** argv)
     //not currently implemented yet in library
     
     //back to Kaps' original code
-    
-    
     int nCount = 200;
 
-	
     //Capturing Frame
     namedWindow("DISPLAY",WINDOW_NORMAL);
     namedWindow("DISPLAY2",WINDOW_NORMAL);
     namedWindow("DISPLAY3",WINDOW_NORMAL);
 
-    
     ofstream RawData ("Data/Test_Fri_16Dec/Median"+to_string(MBlurRate)+"_Thresh"+to_string(THoldRate)+"BlackPixels.txt");
     ofstream BlackPixels ("Data/Test_Fri_16Dec/BlackPixels.txt");
 
@@ -82,16 +79,14 @@ int main(int argc, char** argv)
 
 		Camera.grab(); 
 		Camera.retrieve (Image);
-	    Temp = Image.clone();
+	        Temp = Image.clone();
 		if(i >= 0){
 			getRedColor(Image);
-
 			//getEqualize(Image);
-	    
 			//getBlur(Image);
-
 			getThresh(Image);  
-	  
+	  		
+			//shows thresholded image
 			imshow("DISPLAY2",Image);
 	  
 			int BlackPix = getBlackPixels(Image);
@@ -103,11 +98,17 @@ int main(int argc, char** argv)
 				double ProcessTime= (clock()-Time)/CLOCKS_PER_SEC;
 				RawData<<"Time :"<<ProcessTime<<endl;
 				   if(BlackPixels.is_open()){
-					  BlackPixels<<ProcessTime<<" "<<BlackPix<<endl;
+					BlackPixels<<ProcessTime<<" "<<BlackPix<<endl;
 					}
 			RawData<<'\n';	
 			}  
-			
+		// we need to expand this to include kaps' histogram binning code
+		//then draw circles ontop of image
+		//Point center(cvRound(circles[i][0]),cvRound(circles[i][1]));
+		//int radius = cvRound(circles[i][2]);
+		//circle(Temp,center,3, Scalar(0,255,0), -1, 8,0); \\green dot at centre location	
+		//circle(Temp,center, radius, Scalar(0,0,225), 3, 8, 0); \\red circle around centre	
+
 		//Canny(Image, canny, 150, 300);	
 		//imshow("DISPLAY3",canny);
 		//vector<Vec3f>circles;
@@ -122,8 +123,7 @@ int main(int argc, char** argv)
 		//	}	
 
 		//writes images to disk	
-		//imwrite("Data/Test_Fri_16Dec/frames/image"+to_string(i)+".png",Temp);
-				
+		//imwrite("Data/Test_Fri_16Dec/frames/image"+to_string(i)+".png",Temp);	
 		}
 	
 	imshow("DISPLAY",Temp);
@@ -131,8 +131,8 @@ int main(int argc, char** argv)
 	
     }
     
-    double Total = (clock() - Time)/(double)CLOCKS_PER_SEC;
-    cout<<"Total Process Time "<<setprecision(3)<<(Total)<<endl;
+    //double Total = (clock() - Time)/(double)CLOCKS_PER_SEC;
+    //cout<<"Total Process Time "<<setprecision(3)<<(Total)<<endl;
 
     BlackPixels.close();
     RawData.close();
