@@ -53,7 +53,6 @@ def measure():
         #session['arrayObject'] = request.form.getlist('arrayObject[][]')
         preparethelights(request.json)
     print 'Measuring pupil please wait'
-    return 'Measuring... please wait'
 
 def runmecall():
     """calls the 'RunMe.sh script"""
@@ -73,7 +72,12 @@ def gen(camera):
                b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
 
 def hextorgb(value):
-    """Converts from NEX value to RGB"""
+    """Converts from HEX value to RGB
+    >>> hextorgb("#ffffff")
+    (255, 255, 255)
+    >>> hextorgb("#B4FBB8")
+    (180, 251, 184)
+    """
     colrgb = tuple(int(value[i:i+2], 16) for i in (0, 2, 4))
     print('RGB =', colrgb)
     return colrgb
