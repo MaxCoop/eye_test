@@ -11,6 +11,32 @@ Our system uses a RPi 2 B+ as a base along with a NoIR camera to recieve images 
 
 <img src="https://github.com/kaiwhata/eye_test/blob/master/fullsystemoverview.png" width="500">
 
+```
+.
++-- _Webapp
+|   +-- RunMe.sh
+|   +-- App.py
+|   +-- camera.py
+|   +-- camera_pi.py
+|   +-- _python
+|   |   +-- NeopixelColorControl.py
+|   |   +-- data_plotting.py
+|   +-- _templates
+|   |   +-- index.html
+|   +-- _Data
+|   |   +-- <date_named_data_folders>
+|   +-- _static
+|   |   +-- _js
+|   |   |   +-- extra.js
+|   |   |   +-- script.js
+|   |   +-- _css
+|   |   +-- _dist
+|   |   +-- _images
+|   |   +-- _scripts
+|   |   +-- _src
++-- _Snapshot
+```
+
 ## Supervisor
 We use supervisor-ctl to launch the flask webserverapp at boot.
 Scripts are called automatically from the `supervisord.conf` file and running the `supervisorctl status all` command will show what scripts/p[rograms are currently known by and teh status of them under supervior.
