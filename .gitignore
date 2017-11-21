@@ -1,6 +1,7 @@
-# Large Video Files
+# Large Data or Video Files
 Videofiles/
 videofiles/
+Webapp/Data/
 
 # Any other produced videofiles that I have forgotten to clean up
 *.mp4
