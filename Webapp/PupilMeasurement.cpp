@@ -1,5 +1,5 @@
 //compile command
-//g++ CCodeVid5.cpp -o CCodeVid5 -lopencv_core -lopencv_highgui -lopencv_imgproc -lraspicam -lraspicam_cv -std=c++11
+//g++ PupilMeasurement.cpp -o PupilMeasurement -lopencv_core -lopencv_highgui -lopencv_imgproc -lraspicam -lraspicam_cv -std=c++11
 
 #include <string>
 #include <stdlib.h>
