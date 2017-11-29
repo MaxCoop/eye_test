@@ -1,12 +1,28 @@
 # Instructions for setting up the background RPi
 
-* Start with fresh raspian install (we're using 2015-09-24-raspian-jessie.img)
+* Start with fresh raspian install (we're using 2015-09-24-raspian-jessie.img for the RPi 2B+)
+* Start with fresh raspian install (we're using 2017-09-07-raspian-jessie.img for the RPi 3)
+
 * `sudo raspi-config` + resize SD card partition and enable camera and ssh 
 * `sudo apt-get update`
 * `sudo apt-get upgrade`
 * `sudo apt-get install git-core git`
-* `sudo apt-get install libopencv-dev`
-* `sudo apt-get upgrade
+* `sudo apt-get install libopencv-dev cmake`
+* if using the multiplexer run  `sudo apt-get install i2c-tools python-smbus`
+* if not using the multiplexer run `sudo apt-get install python-picamera`
+* `sudo apt-get upgrade`
+
+For the cpp code to work
+* download the raspicam library [here](https://sourceforge.net/projects/raspicam/files/?)
+* then run the following commands:
+  * `tar xvzf raspicamxx.tgz`
+  * `cd raspicamxx`
+  * `mkdir build`
+  * `cd build`
+  * `cmake ..`
+  * `make`
+  * `sudo make install`
+  * `sudo ldconfig`
 
 Then install supervisor
  * `pip install supervisor`
