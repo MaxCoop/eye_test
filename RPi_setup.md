@@ -14,8 +14,8 @@
 ## For the cpp code to work
 * download the raspicam library [here](https://sourceforge.net/projects/raspicam/files/?)
 * then run the following commands:
-  * `tar xvzf raspicamxx.tgz`
-  * `cd raspicamxx`
+  * `tar xvzf raspicam-0.1.6.zip`
+  * `cd raspicam-0.1.6.zip`
   * `mkdir build`
   * `cd build`
   * `cmake ..`
