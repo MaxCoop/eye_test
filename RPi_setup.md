@@ -10,7 +10,6 @@
 * `sudo apt-get install libopencv-dev cmake`
 * if using the multiplexer run  `sudo apt-get install i2c-tools python-smbus`
 * if not using the multiplexer run `sudo apt-get install python-picamera`
-* `sudo apt-get upgrade`
 
 ## For the cpp code to work
 * download the raspicam library [here](https://sourceforge.net/projects/raspicam/files/?)
